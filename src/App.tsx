@@ -1,31 +1,42 @@
-import "./App.css";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Layout from "./component/Layout";
-import Som from "./routes/Som";
-import Home from "./component/Home";
-function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <Layout />,
-      children: [
-        {
-          path: '/',
-          element: <Home />,
-        },
-        {
-          path: '/som',
-          element: <Som />,
-        },
-      ]
-    },
-  ]);
+import './App.css';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from './component/Layout';
+import Main from './routes/Main/Main';
+import Work from './routes/Works/Work';
+import NotFound from './routes/NotFound';
+import Project from './routes/Project/:id/Project';
 
-  return (
-    <>
-      <RouterProvider router={router} />
-    </>
-  );
+function App() {
+	const router = createBrowserRouter([
+		{
+			path: '/',
+			element: <Layout />,
+			children: [
+				{
+					path: '/',
+					element: <Main />,
+				},
+				{
+					path: 'works',
+					element: <Work />,
+				},
+				{
+					path: 'project/:id',
+					element: <Project />,
+				},
+			],
+		},
+		{
+			path: '*',
+			element: <NotFound />,
+		},
+	]);
+
+	return (
+		<>
+			<RouterProvider router={router} />
+		</>
+	);
 }
 
 export default App;
