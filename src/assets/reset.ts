@@ -1,11 +1,18 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+:root{
+  --main-color: #f4a000;
+  --text-color: #422612;
+  --point-color:#f09dc1;
+  --bg-color:#f1e1bb;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:
+    "Montserrat", sans-serif,
 		'Pretendard Variable',
 		Pretendard,
 		-apple-system,
@@ -61,6 +68,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     line-height: 1;
     min-height: 100dvh;
+    background-color: var(--bg-color);
   }
 
   ol, ul {
