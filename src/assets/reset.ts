@@ -1,11 +1,17 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
+:root{
+  --main-color: #f4a000;
+  --text-color1: #422612;
+  --point-color:#f09dc1;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:
+    "Montserrat", sans-serif,
 		'Pretendard Variable',
 		Pretendard,
 		-apple-system,
