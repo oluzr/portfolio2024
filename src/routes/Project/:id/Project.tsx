@@ -1,11 +1,7 @@
 import React from 'react';
-
+import * as S from './style';
 const Project = () => {
-  return (
-    <div>
-      prd
-    </div>
-  );
+	return <S.ProjectWrapper></S.ProjectWrapper>;
 };
 
 export default Project;

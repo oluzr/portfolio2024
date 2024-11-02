@@ -1,5 +1,6 @@
+import * as S from './style';
 const Main = () => {
-	return <div>main</div>;
+	return <S.MainWrapper>main</S.MainWrapper>;
 };
 
 export default Main;
