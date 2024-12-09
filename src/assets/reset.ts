@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 :root{
@@ -95,4 +95,46 @@ export const GlobalStyle = createGlobalStyle`
     border:none;
     cursor: pointer;
   }
+// router-transition
+  .page {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: all 3s;
+  }
+  .page-transition-wrapper {
+    position: relative;
+  }
+  .page-transition--push-enter {
+    z-index: 1;
+    transform: translateX(100%);
+  }
+  .page-transition--push-enter-active {
+    transform: translateX(0);
+    transition: transform 1s;
+  }
+  .page-transition--push-exit {
+    z-index: 0;
+    transform: translateX(0);
+  }
+  .page-transition--push-exit-active {
+    transform: translateX(-100%);
+    transition: transform 1s;
+  }
+  .page-transition--pop-enter {
+    z-index: 1;
+    transform: translateX(-100%);
+  }
+  .page-transition--pop-enter-active {
+    transform: translateX(0);
+    transition: transform 1s;
+  }
+  .page-transition--pop-exit {
+    transform: translateX(0);
+  }
+  .page-transition--pop-exit-active {
+    transform: translateX(100%);
+    transition: transform 1s;
+  }
+
 `;
