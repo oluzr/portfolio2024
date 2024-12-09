@@ -68,7 +68,7 @@ export const GlobalStyle = createGlobalStyle`
     height: 100%;
     line-height: 1;
     min-height: 100dvh;
-    background-color: var(--bg-color);
+    /* background-color: var(--bg-color); */
   }
 
   ol, ul {
@@ -104,6 +104,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .page-transition-wrapper {
     position: relative;
+    height: 100%;
   }
   .page-transition--push-enter {
     z-index: 1;
