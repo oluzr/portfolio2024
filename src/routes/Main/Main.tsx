@@ -1,6 +1,7 @@
-import * as S from './style';
+import * as S from "./style";
+import contants from "constants/constants";
 const Main = () => {
-	return <S.MainWrapper>main</S.MainWrapper>;
+  return <S.MainStyleContainer></S.MainStyleContainer>;
 };
 
 export default Main;

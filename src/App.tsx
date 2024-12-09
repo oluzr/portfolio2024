@@ -1,41 +1,19 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Layout from './component/container/Layout/Layout';
-import Main from './routes/Main/Main';
-import Work from './routes/Works/Work';
-import NotFound from './routes/NotFound';
-import Project from './routes/Project/:id/Project';
+import Layout from "components/layout/Layout/Layout";
+import RouterTransition from "components/layout/RouterTransition/RouterTransition";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Main from "routes/Main/Main";
 
 const App = () => {
-	const router = createBrowserRouter([
-		{
-			path: '/',
-			element: <Layout />,
-			children: [
-				{
-					path: '/',
-					element: <Main />,
-				},
-				{
-					path: 'works',
-					element: <Work />,
-				},
-				{
-					path: 'project/:id',
-					element: <Project />,
-				},
-			],
-		},
-		{
-			path: '*',
-			element: <NotFound />,
-		},
-	]);
-
-	return (
-		<>
-			<RouterProvider router={router} />
-		</>
-	);
+  const location = useLocation();
+  return (
+    <Layout>
+      <RouterTransition location={location}>
+        <Routes>
+          <Route path="/" element={<Main />} />
+        </Routes>
+      </RouterTransition>
+    </Layout>
+  );
 };
 
 export default App;
