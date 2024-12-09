@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
     font-family:
-    "Montserrat", sans-serif,
+    /* "Montserrat", sans-serif, */
 		'Pretendard Variable',
 		Pretendard,
 		-apple-system,
@@ -66,9 +66,12 @@ export const GlobalStyle = createGlobalStyle`
   body {
     overflow-x: hidden;
     height: 100%;
+    width: 100%;
     line-height: 1;
     min-height: 100dvh;
     /* background-color: var(--bg-color); */
+    background: url("src/assets/images/bg-1.jpg") no-repeat center center;
+    background-size: cover;
   }
 
   ol, ul {
