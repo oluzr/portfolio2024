@@ -115,7 +115,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .page-transition--push-enter-active {
     transform: translateX(0);
-    transition: transform 1s;
+    transition: transform .7s;
   }
   .page-transition--push-exit {
     z-index: 0;
@@ -123,7 +123,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   .page-transition--push-exit-active {
     transform: translateX(-100%);
-    transition: transform 1s;
+    transition: transform .7s;
   }
   .page-transition--pop-enter {
     z-index: 1;
@@ -131,14 +131,14 @@ export const GlobalStyle = createGlobalStyle`
   }
   .page-transition--pop-enter-active {
     transform: translateX(0);
-    transition: transform 1s;
+    transition: transform .7s;
   }
   .page-transition--pop-exit {
     transform: translateX(0);
   }
   .page-transition--pop-exit-active {
     transform: translateX(100%);
-    transition: transform 1s;
+    transition: transform .7s;
   }
 
 `;

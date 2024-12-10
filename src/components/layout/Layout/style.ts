@@ -13,9 +13,9 @@ export const LayoutStyleContainer = styled.main`
   background-color: #00000099;
   overflow: hidden;
   box-shadow: 0 0 100px -1px #ffffff14;
-  transition: all 0.9s;
+  /* transition: all 0.9s; */
   section {
-    transition: all 0.9s;
+    /* transition: all 0.9s; */
     position: absolute;
     width: 100%;
     padding: 20px 20px 60px;
