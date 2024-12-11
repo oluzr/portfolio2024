@@ -2,19 +2,27 @@ import { ProjectItemType } from "types/app/type";
 
 export const OPTIMA_RX_DATA: ProjectItemType = [
   {
-    title: "ai 소분판매",
+    title: "ai 소분판매 관련 작업 내용에 대해 설명해줘",
     contents: [
-      "React로 개발 후 기존 레거시 ASP와 통합 방법 고안",
-      "web.config 파일에 별도 rule 추가(라우팅 관련 오류 처리)",
+      "React로 개발 후 기존 레거시 ASP와 통합 방법을 고안했습니다.",
+      "web.config 파일에 별도 rule 추가하는 등 라우팅 관련 오류를 처리했습니다",
       {
-        code: `
-          <rule name="React App Routes" stopProcessing="true">
-              <match url="^ai/.*" />
-              <conditions logicalGrouping="MatchAll">
-                  <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
-                  <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
-              </conditions>
-              <action type="Rewrite" url="/Ai/index.html" />
+        PB상품: [
+          "상품 리스트 (무한 스크롤) 캐싱 처리",
+          "상품 목록에서 상세로 이동 후 뒤로 가기로 넘어올 시 상품 리스트 데이터 및 스크롤 위치 유지",
+          "상품 아이템 스켈레톤 처리",
+          `상품 장바구니 담기 및 찜하기 기능
+            useMutation 낙관적 UI 업데이트 처리`,
+        ],
+      },
+      {
+        code: `<rule name="React App Routes" stopProcessing="true">
+          ㅤ<match url="^ai/.*" />
+          ㅤㅤ<conditions logicalGrouping="MatchAll">
+          ㅤㅤㅤ<add input="{REQUEST_FILENAME}" matchType="IsFile"/>
+          ㅤㅤㅤ<add input="{REQUEST_FILENAME}" matchType="IsDirectory"/>
+          ㅤㅤ</conditions>
+          ㅤ<action type="Rewrite" url="/Ai/index.html" />
           </rule>
         `,
       },
@@ -75,20 +83,16 @@ export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
           "상품 리스트 (무한 스크롤) 캐싱 처리",
           "상품 목록에서 상세로 이동 후 뒤로 가기로 넘어올 시 상품 리스트 데이터 및 스크롤 위치 유지",
           "상품 아이템 스켈레톤 처리",
-          {
-            "상품 장바구니 담기 및 찜하기 기능":
-              "useMutation 낙관적 UI 업데이트 처리",
-          },
+          `상품 장바구니 담기 및 찜하기 기능
+            useMutation 낙관적 UI 업데이트 처리`,
         ],
       },
       {
         "카테고리 별 상품(메인,목록 페이지)": "위 PB상품 페이지와 동일",
       },
       {
-        '이벤트': [
-          
-        ]
-      }
+        이벤트: [],
+      },
     ],
   },
 ];

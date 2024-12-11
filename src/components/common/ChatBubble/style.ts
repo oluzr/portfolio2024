@@ -5,6 +5,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
 	width: 100%;
 	padding-bottom: 13px;
 	display: flex;
+	margin-bottom: 20px;
 	${(prop) =>
 		prop.$side === 'left' &&
 		css`
@@ -21,7 +22,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
 		border-radius: 13px;
 		font-weight: 400;
 		font-size: 14px;
-		max-width: 60%;
+		max-width: 50%;
         line-height:1.4;
 		${(prop) =>
 			prop.$side === 'left' &&

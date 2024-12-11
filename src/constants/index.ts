@@ -1,14 +1,14 @@
 export const constants = {
   APPICONS_1: [
     {
-      imgUrl: "assets/images/fish1.png",
+      imgUrl: "/assets/images/fish1.png",
       iconName: "피쉬1",
       linkTo: "/",
     },
     {
       imgUrl: "/assets/images/fish2.png",
       iconName: "피쉬2",
-      linkTo: "/",
+      linkTo: "/works/optimaRx",
     },
     {
       imgUrl: "/assets/images/fish3.png",
@@ -21,6 +21,4 @@ export const constants = {
       linkTo: "/works",
     },
   ],
-
-
 };

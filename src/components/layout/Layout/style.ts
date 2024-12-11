@@ -8,16 +8,17 @@ export const LayoutStyleContainer = styled.main`
   transform: translateX(-50%);
   height: 90vh;
   border-radius: 20px 20px 0 0;
-  /* border: 2px solid #00000029; */
   padding: 40px 0px 0;
   background-color: #00000099;
+  backdrop-filter: blur(14px);
+
   overflow: hidden;
   box-shadow: 0 0 100px -1px #ffffff14;
-  /* transition: all 0.9s; */
   section {
     /* transition: all 0.9s; */
     position: absolute;
     width: 100%;
     padding: 20px 20px 60px;
+    overflow-y: auto;
   }
 `;

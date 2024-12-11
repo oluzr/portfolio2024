@@ -12,6 +12,12 @@ const Header = () => {
           <IoIosHome />
         </div>
       </div>
+      <AppIcon
+        iconName="main"
+        linkTo="/"
+        imgUrl="/assets/images/fish1.png"
+        style={{ top: "10%", right: "10%", position: "fixed", zIndex: "10" }}
+      />
       <AppIcons
         title="Projects"
         icons={constants.APPICONS_1}
