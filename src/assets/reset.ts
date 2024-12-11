@@ -70,7 +70,7 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1;
     min-height: 100dvh;
     /* background-color: var(--bg-color); */
-    background: url("src/assets/images/bg-1.jpg") no-repeat center center;
+    background: url("/assets/images/bg-1.jpg") no-repeat center center;
     background-size: cover;
   }
 

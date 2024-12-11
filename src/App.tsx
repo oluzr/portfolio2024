@@ -11,7 +11,7 @@ const App = () => {
       <RouterTransition location={location}>
         <Routes location={location}>
           <Route path="/" element={<Main />} />
-          <Route path="/works" element={<Works />} />
+          <Route path="/works/:value" element={<Works />} />
         </Routes>
       </RouterTransition>
     </Layout>
