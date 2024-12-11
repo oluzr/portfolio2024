@@ -5,19 +5,21 @@ import * as S from "./style";
 import { useAppIconsStore, useModalBGStore } from "store/app";
 const AppIcons = ({ icons, title, style }: AppIconsProp) => {
   const { modalBGShowState, showModalBG } = useModalBGStore((state) => state);
+  const [thisShowState, setShowState] = useState(false);
   const { openAppIcons, isOpened } = useAppIconsStore((state) => state);
-  useEffect(() => {
-    return () => {};
-  }, []);
   const appIconsOnClickHandler = () => {
-    console.log("clicked!");
-    if (isOpened) return;
     openAppIcons();
+    setShowState(true);
   };
+  useEffect(() => {
+    if (!isOpened) {
+      setShowState(false);
+    }
+  }, [isOpened]);
   return (
     <S.AppIconsStyleContainer style={style} $title={title}>
       <div
-        className={`app-icons ${isOpened ? "clicked" : ""}`}
+        className={`app-icons ${thisShowState ? "clicked" : ""}`}
         onClick={appIconsOnClickHandler}
       >
         <ul>

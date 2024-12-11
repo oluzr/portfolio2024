@@ -5,10 +5,12 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-
+  &:has(.clicked) {
+    z-index: 4;
+  }
   p.title {
     color: #fff;
-    width: 74px;
+    /* width: 74px; */
     text-align: center;
     transition: all 0s;
     font-size: 13px;
@@ -19,8 +21,9 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
     background-color: #ffffff34;
     transform: scale(0.4);
     transition: all 0.3s;
-    transform-origin: left bottom;
+    transform-origin: center bottom;
     position: relative;
+    z-index: 2;
     &::after {
       content: "";
       display: block;
@@ -30,7 +33,8 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
       position: absolute;
       top: 0;
       left: 0;
-      z-index: 1;
+      z-index: 2;
+      cursor: pointer;
     }
     &::before {
       content: "${(prop) => prop.$title}";
@@ -46,6 +50,7 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
     }
     &.clicked {
       transform: scale(1);
+
       & + p {
         opacity: 0;
       }
@@ -60,7 +65,7 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
         display: block;
       }
       ul {
-        width: 200px;
+        width: 228px;
         p {
           display: block;
         }
@@ -70,10 +75,10 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 25px;
-      padding: 20px;
-      width: 185px;
+      /* justify-content: space-around; */
+      gap: 15px 22px;
+      padding: 23px;
+      width: 230px;
       li p {
         display: none;
       }

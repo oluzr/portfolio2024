@@ -2,12 +2,13 @@ import styled from "styled-components";
 export const AppIconStyleContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 8px;
   align-items: center;
   justify-content: center;
+  z-index: 1;
   .app-icon-img {
     border-radius: 13px;
-    width: 60px;
+    width: 80px;
     aspect-ratio: 1/1;
     /* border: 1px solid #ddd; */
     overflow: hidden;

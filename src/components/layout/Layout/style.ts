@@ -11,7 +11,6 @@ export const LayoutStyleContainer = styled.main`
   padding: 40px 0px 0;
   background-color: #00000099;
   backdrop-filter: blur(14px);
-
   overflow: hidden;
   box-shadow: 0 0 100px -1px #ffffff14;
   section {

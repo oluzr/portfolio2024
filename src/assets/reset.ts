@@ -140,5 +140,33 @@ export const GlobalStyle = createGlobalStyle`
     transform: translateX(100%);
     transition: transform .7s;
   }
+  /* 스크롤바의 전체 크기 설정 */
+  ::-webkit-scrollbar {
+    width: 4px;  
+    height: 4px; 
+  }
+
+  /* 스크롤바의 배경 */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+  }
+
+  /* 스크롤바의 막대 (thumb) */
+  ::-webkit-scrollbar-thumb {
+    background: #ffffff37;  
+    border-radius: 10px;
+  }
+
+  /* 스크롤바를 드래그할 때 색상 변경 */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000;  
+  }
+
+  /* 스크롤바에 호버 시, 트랙 배경 변경 */
+  ::-webkit-scrollbar-track:hover {
+    /* background: #ddd;   */
+  }
 
 `;

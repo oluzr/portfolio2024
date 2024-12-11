@@ -2,7 +2,7 @@ import { ProjectItemType } from "types/app/type";
 
 export const OPTIMA_RX_DATA: ProjectItemType = [
   {
-    title: "ai 소분판매 관련 작업 내용에 대해 설명해줘",
+    title: "ai 소분판매 관련 작업한 내용에 대해 설명해줘",
     contents: [
       "React로 개발 후 기존 레거시 ASP와 통합 방법을 고안했습니다.",
       "web.config 파일에 별도 rule 추가하는 등 라우팅 관련 오류를 처리했습니다",
@@ -29,14 +29,15 @@ export const OPTIMA_RX_DATA: ProjectItemType = [
     ],
   },
   {
-    title: "전체 디렉토리 코드 분석 및 문서화 정리",
+    title: "전체 디렉토리 코드 분석 및 문서화 정리한 것에 대해 설명해줘",
     contents: [
-      "페이지 별 호출 저장 프로시저명, 매개변수 등 정리",
-      "API 요청 (ajax) 코드 HTTP타입 및 실행 내용 파악 및 정리",
+      "1. 페이지 별 호출 저장 프로시저명, 매개변수 등 문서화 정리",
+      "2. API 요청 (ajax) 코드 HTTP 타입 및 실행 내용 파악 및 정리",
+      "문서화된 내용을 기반으로 이후 버그 수정 및 디자인 리뉴얼 작업 시 빠른 처리와 업무 효율을 높일 수 있었습니다 🥰",
     ],
   },
   {
-    title: "SEO 최적화 작업 건",
+    title: "SEO 최적화 작업 건에 대해 설명해줘",
     contents: ["상품 상세 페이지 meta keywords 작업"],
   },
 ];
