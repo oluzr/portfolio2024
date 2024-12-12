@@ -17,7 +17,11 @@ const AppIcons = ({ icons, title, style }: AppIconsProp) => {
     }
   }, [isOpened]);
   return (
-    <S.AppIconsStyleContainer style={style} $title={title}>
+    <S.AppIconsStyleContainer
+      style={style}
+      $title={title}
+      $length={icons.length > 4 ? "3n" : "2n"}
+    >
       <div
         className={`app-icons ${thisShowState ? "clicked" : ""}`}
         onClick={appIconsOnClickHandler}

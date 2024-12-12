@@ -6,11 +6,11 @@ const ChatBubble = ({ side = "left", message, img, title }: ChatBubbleProp) => {
     <S.ChatBubbleStyleContainer $side={side}>
       <div className="chat-bubble-wrap">
         {img && <Image src={img} />}
-        {title && <h4>{title}</h4>}
+        {title && <h4>✍🏻 {title}</h4>}
         {typeof message === "string" ? (
           <p>{message}</p>
         ) : (
-          message?.map((msg) => <p>- {msg}</p>)
+          message?.map((msg) => <p>{msg}</p>)
         )}
       </div>
     </S.ChatBubbleStyleContainer>

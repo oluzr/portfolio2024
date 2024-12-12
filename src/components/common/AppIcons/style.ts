@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled,{css} from "styled-components";
 import { AppIconsStyleProp } from "./interface";
 export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
   display: flex;

@@ -7,4 +7,5 @@ export type AppIconsProp = {
 };
 export interface AppIconsStyleProp {
   $title: string;
+  $length: "2n" | "3n";
 }

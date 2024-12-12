@@ -1,11 +1,20 @@
 import styled from "styled-components";
 export const ContentCardStyleContainer = styled.div`
   .card-sec {
-    margin-bottom: 30vh;
+    margin-bottom: 10vh;
     position: relative;
     /* padding: 60px var(--mob-padding) 0; */
     padding: 20vh 40px 0;
     @include onlyPc {
+    }
+    ul {
+      li {
+        opacity: 0;
+        transition: all 0.9s;
+        &.show {
+          opacity: 1;
+        }
+      }
     }
     .title {
       position: sticky;
@@ -23,6 +32,7 @@ export const ContentCardStyleContainer = styled.div`
       & > * {
         opacity: 0;
         transition: all 0.8s;
+        color: #fff;
       }
 
       ul {

@@ -25,7 +25,7 @@ const Header = () => {
         }}
       />
       <AppIcons
-        title="about me"
+        title="oluzr"
         icons={constants.APPICONS_2}
         style={{
           bottom: "30%",

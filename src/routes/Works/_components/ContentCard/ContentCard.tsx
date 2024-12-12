@@ -1,4 +1,4 @@
-import { OPTIMA_RX_DATA } from "api/data";
+import { OPTIMA_MOBILE_APP_DATA, OPTIMA_RX_DATA } from "api/data";
 import { InView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import * as S from "./style";
@@ -13,8 +13,10 @@ const ContentCard = ({ value }: { value: string }) => {
     switch (value) {
       case "optimaRx":
         setProjectData(OPTIMA_RX_DATA);
-        break;
-
+        return;
+      case "optimaApp":
+        setProjectData(OPTIMA_MOBILE_APP_DATA);
+        return;
       default:
         break;
     }
@@ -24,7 +26,7 @@ const ContentCard = ({ value }: { value: string }) => {
     <S.ContentCardStyleContainer>
       {projectData.map((item, idx) => {
         return (
-          <InView key={idx} threshold={0.7}>
+          <InView key={idx} threshold={0.2}>
             {({ inView, ref }) => (
               <div className="card-sec" ref={ref}>
                 <div className={inView ? "show title" : "title"}>
@@ -32,7 +34,7 @@ const ContentCard = ({ value }: { value: string }) => {
                 </div>
                 <ul>
                   {item.contents.map((cont, idx) => (
-                    <InView threshold={0.7} key={idx}>
+                    <InView threshold={0.5} key={idx} triggerOnce={true}>
                       {({ inView: inView2, ref: ref2 }) => (
                         <li
                           className={inView2 ? "show" : ""}
