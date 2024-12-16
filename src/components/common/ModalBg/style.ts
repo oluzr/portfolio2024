@@ -8,7 +8,7 @@ export const ModalBgStyleContainer = styled.div<ModalBgStyleProp>`
   height: 100%;
   backdrop-filter: blur(0px);
   /* background-color: #ffffff05; */
-  z-index: 2;
+  z-index: 3;
   visibility: hidden;
   transition: all 0.2s;
   ${(prop) =>

@@ -2,5 +2,8 @@ export interface AppIconProp {
   imgUrl: string;
   iconName: string;
   linkTo?: string;
-  style?: any;
+  style?: React.CSSProperties;
+}
+export interface AppIconStyleProp {
+  style?: React.CSSProperties;
 }

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { ChatBubbleStyleProp } from "./interface";
+import { media } from "assets/media";
 
 export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
   width: 100%;
@@ -23,17 +24,21 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
     font-weight: 400;
     font-size: 14px;
     line-height: 1.5;
+    ${media.phone`
+        /* width:100%; */
+        max-width:80%;
+      `}  
     ${(prop) =>
       prop.$side === "left" &&
       css`
-      max-width: 35%;
-      background-color: #007aff;
-      color: #fff;
+        max-width: 35%;
+        background-color: #007aff;
+        color: #fff;
       `}
-      ${(prop) =>
+    ${(prop) =>
       prop.$side === "right" &&
       css`
-      max-width: 64%;
+        max-width: 64%;
         color: #333;
         background-color: #e5e5ea;
       `}
@@ -64,7 +69,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
       padding-top: 4px;
       margin-bottom: 4px;
       font-size: 15px;
-      color:#000
+      color: #000;
     }
     p {
       margin: 0;

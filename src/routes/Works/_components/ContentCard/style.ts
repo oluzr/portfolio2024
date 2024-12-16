@@ -1,3 +1,4 @@
+import { media } from "assets/media";
 import styled from "styled-components";
 export const ContentCardStyleContainer = styled.div`
   .card-sec {
@@ -5,8 +6,9 @@ export const ContentCardStyleContainer = styled.div`
     position: relative;
     /* padding: 60px var(--mob-padding) 0; */
     padding: 20vh 40px 0;
-    @include onlyPc {
-    }
+    ${media.phone`
+      padding:14px;
+    `}
     ul {
       li {
         opacity: 0;
@@ -21,10 +23,12 @@ export const ContentCardStyleContainer = styled.div`
       top: 20vh;
       font-size: 50px;
       font-weight: 500;
-      @include mobile {
-        position: unset;
-        margin-bottom: 10px;
-      }
+      ${media.phone`
+        top:10px;
+        
+        z-index:1;
+      `}
+
       &.show > * {
         opacity: 1;
         transform: translateY(0);
@@ -46,11 +50,7 @@ export const ContentCardStyleContainer = styled.div`
         display: flex;
         flex-direction: column;
         gap: 30px;
-        @include mobile {
-          margin-top: 25px;
-          width: 100%;
-          gap: 15px;
-        }
+
         li {
           width: 100%;
           display: flex;

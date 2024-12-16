@@ -1,5 +1,7 @@
 import styled from "styled-components";
-export const AppIconStyleContainer = styled.div`
+import { AppIconStyleProp } from "./interface";
+import { media } from "assets/media";
+export const AppIconStyleContainer = styled.div<AppIconStyleProp>`
   display: flex;
   flex-direction: column;
   gap: 8px;

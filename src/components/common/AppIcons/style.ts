@@ -1,12 +1,16 @@
-import styled,{css} from "styled-components";
+import styled, { css } from "styled-components";
 import { AppIconsStyleProp } from "./interface";
+import { media } from "assets/media";
 export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 10px;
+  z-index: 2;
+
   &:has(.clicked) {
     z-index: 4;
+
   }
   p.title {
     color: #fff;
@@ -23,7 +27,7 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
     transition: all 0.3s;
     transform-origin: center bottom;
     position: relative;
-    z-index: 2;
+
     &::after {
       content: "";
       display: block;

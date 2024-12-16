@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import Image from "../Image/Image";
 import { AppIconProp } from "./interface";
 import * as S from "./style";
+import { media } from "assets/media";
 const AppIcon = ({ iconName, imgUrl, linkTo, style }: AppIconProp) => {
   return (
     <S.AppIconStyleContainer style={style}>

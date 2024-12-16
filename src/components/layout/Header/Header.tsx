@@ -7,7 +7,6 @@ import { constants } from "constants";
 const Header = () => {
   return (
     <S.HeaderStyleContainer>
-      <div className="head-inner"></div>
       <AppIcon
         iconName="main"
         linkTo="/"
