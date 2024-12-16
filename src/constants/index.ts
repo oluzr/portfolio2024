@@ -2,23 +2,23 @@ export const constants = {
   APPICONS_1: [
     {
       imgUrl: "/assets/images/fish1.png",
-      iconName: "In LSP",
-      linkTo: "/works/optimaRx",
+      iconName: "work projects",
+      linkTo: "/works",
     },
     {
       imgUrl: "/assets/images/fish2.png",
-      iconName: "optima app",
-      linkTo: "/works/optimaApp",
-    },
-    {
-      imgUrl: "/assets/images/fish3.png",
-      iconName: "side project",
-      linkTo: "/",
+      iconName: "*OPTIMA app",
+      linkTo: "/project/optimaApp",
     },
     {
       imgUrl: "/assets/images/fish4.png",
-      iconName: "그 외",
-      linkTo: "/works",
+      iconName: "OPTIMA RX",
+      linkTo: "/project/optimaRx",
+    },
+    {
+      imgUrl: "/assets/images/fish3.png",
+      iconName: "side projects",
+      linkTo: "/sideProjects",
     },
   ],
   APPICONS_2: [

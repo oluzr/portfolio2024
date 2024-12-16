@@ -1,4 +1,9 @@
-import { OPTIMA_MOBILE_APP_DATA, OPTIMA_RX_DATA } from "api/data";
+import {
+  LSP_DATA,
+  OPTIMA_MOBILE_APP_DATA,
+  OPTIMA_RX_DATA,
+  OPTIMACARE_DATA,
+} from "api/data";
 import { InView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import * as S from "./style";
@@ -16,6 +21,12 @@ const ContentCard = ({ value }: { value: string }) => {
         return;
       case "optimaApp":
         setProjectData(OPTIMA_MOBILE_APP_DATA);
+        return;
+      case "optimacare":
+        setProjectData(OPTIMACARE_DATA);
+        return;
+      case "lsp":
+        setProjectData(LSP_DATA);
         return;
       default:
         break;
@@ -43,11 +54,15 @@ const ContentCard = ({ value }: { value: string }) => {
                         >
                           {typeof cont === "string" ? (
                             // 1. 그냥 string일 때
-                            <ChatBubble side="right" message={cont} />
+                            <ChatBubble key={idx} side="right" message={cont} />
                           ) : typeof cont === "object" ? (
                             typeof cont.value === "string" ? (
                               // 3. obj && value가 string일 때
-                              <ChatBubble side="right" message={cont.value} />
+                              <ChatBubble
+                                key={idx}
+                                side="right"
+                                message={cont.value}
+                              />
                             ) : (
                               // 4. obj && value가 object일 때
                               Object.entries(cont).map(
@@ -61,9 +76,14 @@ const ContentCard = ({ value }: { value: string }) => {
                                         message={value2}
                                       />
                                     ) : key2 === "code" ? (
-                                      <Codebox side="right" content={value2} />
+                                      <Codebox
+                                        key={idx}
+                                        side="right"
+                                        content={value2}
+                                      />
                                     ) : (
                                       <ChatBubble
+                                        key={idx}
                                         side="right"
                                         title={key2}
                                         message={value2}

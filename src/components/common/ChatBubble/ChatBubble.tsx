@@ -10,7 +10,7 @@ const ChatBubble = ({ side = "left", message, img, title }: ChatBubbleProp) => {
         {typeof message === "string" ? (
           <p>{message}</p>
         ) : (
-          message?.map((msg) => <p>{msg}</p>)
+          message?.map((msg,idx) => <p key={idx}>{msg}</p>)
         )}
       </div>
     </S.ChatBubbleStyleContainer>

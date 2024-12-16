@@ -1,3 +1,4 @@
+import { PrjCardProp } from "components/common/PrjCard/interface";
 import { ProjectItemType } from "types/app/type";
 
 export const OPTIMA_RX_DATA: ProjectItemType = [
@@ -327,5 +328,39 @@ export default Image;`,
         ],
       },
     ],
+  },
+];
+
+export const PRJ_CARDS_DATA: PrjCardProp[] = [
+  {
+    title: "OPTIMA mall Mobile app",
+    startDate: "2024/07",
+    endDate: "2024/10",
+    linkTo:
+      "https://play.google.com/store/apps/details?id=com.lspworld.optimapharmn&pli=1",
+    subTitle: "옵티마 약사몰 모바일 앱 (react 기반 웹 뷰)",
+    contribution: 60,
+    participants: ["front", "front", "ios", "aos"],
+    path: "/project/optimaApp",
+  },
+  {
+    title: "OPTIMA web site Renewal",
+    startDate: "2024/07",
+    endDate: "2024/07",
+    linkTo: "https://www.optimacare.co.kr/",
+    subTitle: "옵티마 가맹 웹 사이트 리뉴얼",
+    contribution: 100,
+    participants: ["front", "back"],
+    path: "/project/optimacare",
+  },
+  {
+    title: "LSP web site Renewal",
+    startDate: "2024/06",
+    endDate: "2024/07",
+    linkTo: "http://www.lspworld.com/",
+    subTitle: "LSP 자사 웹 사이트 리뉴얼",
+    contribution: 100,
+    participants: ["front", "back"],
+    path: "/project/lsp",
   },
 ];

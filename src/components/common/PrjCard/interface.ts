@@ -7,6 +7,7 @@ export interface PrjCardProp {
   contribution: number;
   participants: string[];
   theme?: ThemeType;
+  path?:string
 }
 
 export interface PrjCardStyleProp {

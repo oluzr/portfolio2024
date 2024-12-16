@@ -1,22 +1,16 @@
-import { useNavigate, useParams } from "react-router-dom";
-import ContentCard from "./_components/ContentCard/ContentCard";
+import { PRJ_CARDS_DATA } from "api/data";
 import * as S from "./style";
-import { useEffect } from "react";
-import PrjIntro from "./_components/PrjIntro/PrjIntro";
+import PrjCard from "components/common/PrjCard/PrjCard";
 const Works = () => {
-  const { value } = useParams();
-  const navigate = useNavigate();
-  useEffect(() => {
-    if (!value) {
-      navigate("/works/optimaRx");
-    }
-    console.log(value);
-  }, []);
-  if (!value) return <></>;
   return (
     <S.WorksStyleContainer>
-      <ContentCard value={value} />
-      <PrjIntro value={value} />
+      <ul>
+        {PRJ_CARDS_DATA.map((project, idx) => (
+          <li key={idx}>
+            <PrjCard prjItem={project} />
+          </li>
+        ))}
+      </ul>
     </S.WorksStyleContainer>
   );
 };

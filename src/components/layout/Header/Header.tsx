@@ -14,7 +14,7 @@ const Header = () => {
         style={{ top: "10%", right: "10%", position: "fixed" }}
       />
       <AppIcons
-        title="Projects"
+        title="works"
         icons={constants.APPICONS_1}
         style={{
           top: "30%",
