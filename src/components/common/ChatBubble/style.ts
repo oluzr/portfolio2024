@@ -23,6 +23,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
     border-radius: 13px;
     font-weight: 400;
     font-size: 14px;
+    transition: all 0.2s;
     line-height: 1.5;
     ${media.phone`
         /* width:100%; */

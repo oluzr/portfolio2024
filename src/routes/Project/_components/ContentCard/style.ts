@@ -2,14 +2,15 @@ import { media } from "assets/media";
 import styled from "styled-components";
 export const ContentCardStyleContainer = styled.div`
   .card-sec {
-    margin-bottom: 10vh;
+    margin-bottom: 13vh;
     position: relative;
     /* padding: 60px var(--mob-padding) 0; */
-    padding: 15vh 0px 0;
+    padding: 17vh 0px 0;
     ${media.phone`
       padding:14px;
     `}
     ul {
+      padding-top: 40px;
       li {
         opacity: 0;
         transition: all 0.9s;
@@ -34,7 +35,7 @@ export const ContentCardStyleContainer = styled.div`
         transform: translateY(0);
       }
       & > * {
-        opacity: 0;
+        /* opacity: 0; */
         transition: all 0.8s;
         color: #e5e5ea;
       }

@@ -38,15 +38,19 @@ const ContentCard = ({ value }: { value: string }) => {
     <S.ContentCardStyleContainer>
       {projectData.map((item, idx) => {
         return (
-          <InView key={idx} threshold={0.2}>
+          <InView key={idx} threshold={0.32} triggerOnce={true}>
             {({ inView, ref }) => (
               <div className="card-sec" ref={ref}>
                 <div className={inView ? "show title" : "title"}>
-                  <ChatBubble side="left" message={item.title} />
+                  <ChatBubble
+                    side="left"
+                    message={item.title}
+                    isLoading={!inView}
+                  />
                 </div>
                 <ul>
                   {item.contents.map((cont, idx) => (
-                    <InView threshold={0.5} key={idx} triggerOnce={true}>
+                    <InView threshold={0.7} key={idx} triggerOnce={true}>
                       {({ inView: inView2, ref: ref2 }) => (
                         <li
                           className={inView2 ? "show" : ""}
@@ -83,7 +87,10 @@ const ContentCard = ({ value }: { value: string }) => {
                                         content={value2}
                                       />
                                     ) : key2 === "link" ? (
-                                          <PostingCard link={value2} title={value2} />
+                                      <PostingCard
+                                        link={value2}
+                                        title={value2}
+                                      />
                                     ) : (
                                       <ChatBubble
                                         key={idx}
