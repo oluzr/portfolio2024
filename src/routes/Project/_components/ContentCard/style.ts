@@ -20,7 +20,7 @@ export const ContentCardStyleContainer = styled.div`
     }
     .title {
       position: sticky;
-      top: 20vh;
+      top: 5vh;
       font-size: 50px;
       font-weight: 500;
       ${media.phone`
