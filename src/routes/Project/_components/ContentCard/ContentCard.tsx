@@ -12,6 +12,7 @@ import { useEffect, useState } from "react";
 import { ProjectItemType } from "types/app/type";
 import React from "react";
 import Codebox from "components/common/Codebox/Codebox";
+import PostingCard from "components/common/PostingCard/PostingCard";
 const ContentCard = ({ value }: { value: string }) => {
   const [projectData, setProjectData] = useState<ProjectItemType>();
   useEffect(() => {
@@ -82,7 +83,7 @@ const ContentCard = ({ value }: { value: string }) => {
                                         content={value2}
                                       />
                                     ) : key2 === "link" ? (
-                                      <p>{value2}</p>
+                                          <PostingCard link={value2} title={value2} />
                                     ) : (
                                       <ChatBubble
                                         key={idx}
