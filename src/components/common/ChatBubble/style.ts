@@ -27,11 +27,11 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
     ${media.phone`
         /* width:100%; */
         max-width:80%;
-      `}  
+      `}
     ${(prop) =>
       prop.$side === "left" &&
       css`
-        max-width: 35%;
+        max-width: 32%;
         background-color: #007aff;
         color: #fff;
       `}
@@ -69,10 +69,12 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
       padding-top: 4px;
       margin-bottom: 4px;
       font-size: 15px;
+      white-space: pre-line;
       color: #000;
     }
     p {
       margin: 0;
+      white-space: pre-line;
     }
   }
 `;

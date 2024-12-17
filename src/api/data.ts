@@ -78,7 +78,7 @@ export const LSP_DATA: ProjectItemType = [
 
 export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
   {
-    title: "🗣️ 환경변수 관련 팀 개발환경 자동화 설정",
+    title: `환경변수 관련 팀 개발환경 자동화 설정한 경험에 대해 말해줘`,
     contents: [
       `브랜치별 빌드 시 .env 파일의 환경변수가 자동으로 변경되도록 하여,
       기존의 바라보는 API 서버 수동 변경으로 인한 휴먼 에러 문제를 해결했습니다.`,
@@ -90,7 +90,8 @@ export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
     ],
   },
   {
-    title: "리액트 웹뷰 개발, 네이티브와의 원활한 연동",
+    title: `리액트 웹뷰로 개발하며
+    네이티브와의 원활한 연동을 위해 신경썼던 점에 대해 말해줘`,
     contents: [
       "네이티브와의 원활한 연동을 위해 로그인, 로그아웃, 알림 읽음 처리 등 앱 스킴 호출을 통한 상호작용을 구현했습니다. ",
       "특히 AOS의 물리적 백버튼과 웹 백버튼 동작을 일치시키기 위해 다양한 버그를 해결하며 중요한 경험을 얻었습니다. ",
@@ -100,7 +101,7 @@ export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
     ],
   },
   {
-    title: "주요 내용",
+    title: "주요 작업 내용 정리해줘",
     contents: [
       {
         "백버튼 처리": [
@@ -143,7 +144,7 @@ export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
     ],
   },
   {
-    title: "페이지 단독 작업",
+    title: "단독으로 작업한 페이지들에 대해 자세하게 설명해줘",
     contents: [
       {
         PB상품: [
@@ -220,7 +221,7 @@ export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
     ],
   },
   {
-    title: "페이지별 -2 ",
+    title: "그 외에 기능 개발 및 유지보수 진행한 페이지에 대해 설명해줘",
     contents: [
       {
         회원가입: [
@@ -241,7 +242,8 @@ export const OPTIMA_MOBILE_APP_DATA: ProjectItemType = [
     ],
   },
   {
-    title: "공통 컴포넌트 (단독 작업)",
+    title: `공통 컴포넌트 작업한 것 알려줘
+  (단독 작업)`,
     contents: [
       {
         백버튼: [
@@ -341,11 +343,6 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
       "✔️ React 기반 웹뷰 개발",
       "✔️ 프론트 개발 담당",
       "✔️ 기여도 50% (프론트 2인 진행)",
-    ],
-    feedback: [
-      `🗣️ 리액트 웹뷰 프론트엔드 개발을 수행하며, 네이티브와의 원활한 연동을 위해 로그인, 로그아웃, 알림 읽음 처리 등 앱 스킴 호출을 통한 상호작용을 구현했습니다. 특히 AOS의 물리적 백버튼과 웹 백버튼 동작을 일치시키기 위해 다양한 버그를 해결하며 중요한 경험을 얻었습니다. 전역 상태 관리를 활용해 백버튼의 분기 처리를 구현하고, 예를 들어 모달 팝업창이 열려 있을 경우 물리적 백버튼 클릭 시 팝업을 닫도록 하여 사용자가 의도하지 않게 페이지가 이동하지 않도록 했습니다. 이로써 사용자 경험을 개선하고, 유저가 더 직관적으로 앱을 탐색할 수 있도록 도왔습니다. 이 경험을 통해 모든 페이지의 플로우를 깊이 이해하게 되었고, 앱의 전반적인 안정성과 사용성을 높이는 데 기여했습니다.`,
-      "ㅤ",
-      `🗣️ 환경변수 관련 팀 개발환경 자동화를 설정했습니다. 브랜치별 빌드 시.env 파일의 환경변수가 자동으로 변경되도록 하여, 기존의 바라보는 API 서버 수동 변경으로 인한 휴먼 에러 문제를 해결했습니다. test 브랜치와 main 브랜치에 따른 빌드 분기 처리를 통해 안전하고 효율적인 개발 환경을 조성했습니다.`,
     ],
   },
   {
