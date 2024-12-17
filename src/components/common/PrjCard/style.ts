@@ -1,15 +1,14 @@
 import styled, { css } from "styled-components";
 import { PrjCardStyleProp } from "./interface";
 export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
-  padding: 0 10px;
   .inner {
-    background-color: #ffffff20;
-    border-radius: 30px;
+    background-color: rgba(12, 109, 255, 0.1);
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     padding: 24px 25px;
     gap: 30px;
-    color: #fff;
+    color: #e5e5ea;
     .prj-top {
       display: flex;
       flex-direction: row;
@@ -39,7 +38,7 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
           align-items: center;
           justify-content: center;
           background-color: #000;
-          color: #fff;
+          color: #e5e5ea;
           font-size: 13px;
           padding: 14px 20px;
           border-radius: 40px;

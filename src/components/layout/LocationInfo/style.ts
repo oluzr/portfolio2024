@@ -4,7 +4,7 @@ export const LocationInfoStyleContainer = styled.div`
   top: 15px;
   padding: 0 20px;
   /* background-color: red; */
-  color: #fff;
+  color: #e5e5ea;
   width: 100%;
   /* left: 20px; */
   /* transform: translateX(-50%); */

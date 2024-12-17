@@ -12,7 +12,7 @@ export const ButtonStyleContainer = styled.div<ButtonStyleProp>`
     border: none;
     font-size: 1em;
     transition: all 0.1s;
-    font-weight: 500;
+    font-weight: 400;
     border-radius: 7px;
     width: max-content;
     word-break: keep-all;
@@ -33,6 +33,10 @@ export const ButtonStyleContainer = styled.div<ButtonStyleProp>`
       props.$bgColor &&
       css`
         background-color: ${props.$bgColor};
+        color: #fff;
+        &:hover{
+          background-color: #000;
+        }
       `}
     &.normal {
       background-color: #eee;

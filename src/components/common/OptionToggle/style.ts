@@ -61,7 +61,7 @@ export const ToggleStyleContainer = styled.div<ToggleStyleProp>`
 			position: relative;
 			padding: 10px 20px;
 			p {
-				color: #fff;
+				color: #e5e5ea;
 				transition: all 0.2s;
 				/* width: max-content; */
 				text-align: center;

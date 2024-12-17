@@ -11,12 +11,12 @@ export const NoImageStyleContainer = styled.div`
 
 	span {
 		font-size: 20px;
-		color: #fff;
+		color: #e5e5ea;
 		font-weight: 600;
 	}
 	svg {
 		width: 50%;
 		height: 50%;
-		color: #fff;
+		color: #e5e5ea;
 	}
 `;

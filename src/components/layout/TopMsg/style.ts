@@ -9,7 +9,7 @@ export const TopMsgStyleContainer = styled.div`
   transform: translateX(-50%);
   top: 40px;
   p {
-    color: #fff;
+    color: #e5e5ea;
     font-weight: 300;
     font-size: 14px;
   }

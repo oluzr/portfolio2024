@@ -9,6 +9,7 @@ export interface PrjCardProp {
   theme?: ThemeType;
   path?: string;
   feedback?: string | string[];
+  keywords?: string | string[];
 }
 
 export interface PrjCardStyleProp {

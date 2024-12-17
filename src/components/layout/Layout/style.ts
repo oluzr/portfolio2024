@@ -23,7 +23,7 @@ export const LayoutStyleContainer = styled.main`
     /* transition: all 0.9s; */
     position: absolute;
     width: 100%;
-    padding: 20px 20px 60px;
+    padding: 20px 40px 60px;
     overflow-y: auto;
     ${media.phone`
       padding: 0px;

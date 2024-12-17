@@ -5,7 +5,7 @@ export const ContentCardStyleContainer = styled.div`
     margin-bottom: 10vh;
     position: relative;
     /* padding: 60px var(--mob-padding) 0; */
-    padding: 20vh 40px 0;
+    padding: 15vh 0px 0;
     ${media.phone`
       padding:14px;
     `}
@@ -36,7 +36,7 @@ export const ContentCardStyleContainer = styled.div`
       & > * {
         opacity: 0;
         transition: all 0.8s;
-        color: #fff;
+        color: #e5e5ea;
       }
 
       ul {

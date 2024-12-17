@@ -4,6 +4,7 @@ import * as S from "./style";
 import { PRJ_CARDS_DATA } from "api/data";
 import { useEffect, useState } from "react";
 import { PrjCardProp } from "components/common/PrjCard/interface";
+import Feedback from "components/common/Feedback/Feedback";
 const PrjIntro = ({ value }: PrjIntroProp) => {
   const [projectData, setProjectData] = useState<PrjCardProp | null>(null);
   useEffect(() => {
@@ -25,6 +26,25 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
   return (
     <S.PrjIntroStyleContainer>
       {projectData && <PrjCard prjItem={projectData} />}
+      {(projectData?.keywords ||
+        projectData?.feedback) && (
+          <div className="info-wrap">
+            <div className="inner">
+              {projectData?.keywords && (
+                <>
+                  {/* <h5>주요 키워드</h5> */}
+                  <Feedback feedback={projectData.keywords} />
+                </>
+              )}
+              {projectData?.feedback && (
+                <>
+                  {/* <h5>피드백</h5> */}
+                  <Feedback feedback={projectData.feedback} />
+                </>
+              )}
+            </div>
+          </div>
+        )}
     </S.PrjIntroStyleContainer>
   );
 };

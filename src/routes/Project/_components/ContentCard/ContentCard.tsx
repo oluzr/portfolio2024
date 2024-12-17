@@ -81,6 +81,8 @@ const ContentCard = ({ value }: { value: string }) => {
                                         side="right"
                                         content={value2}
                                       />
+                                    ) : key2 === "link" ? (
+                                      <p>{value2}</p>
                                     ) : (
                                       <ChatBubble
                                         key={idx}

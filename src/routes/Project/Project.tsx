@@ -18,7 +18,9 @@ const Project = () => {
     <S.ProjectStyleContainer>
       <BackBtn />
       <PrjIntro value={value} />
+      
       <ContentCard value={value} />
+      
     </S.ProjectStyleContainer>
   );
 };

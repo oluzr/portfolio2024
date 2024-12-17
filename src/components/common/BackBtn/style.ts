@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const BackBtnStyleContainer = styled.div`
-padding: 0 10px 20px;
+padding: 0 0px 20px;
 cursor: pointer;
   svg {
     color: #fff;

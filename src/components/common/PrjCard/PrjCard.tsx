@@ -22,7 +22,7 @@ const PrjCard = ({ prjItem }: { prjItem: PrjCardProp }) => {
               <Button
                 innerTxt="view more"
                 radius="50%"
-                bgColor="#fff"
+                bgColor="#0000007d"
                 useArrow={true}
                 onClickHandler={() => navigete(prjItem.path!)}
               />
