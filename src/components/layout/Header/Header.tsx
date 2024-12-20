@@ -8,8 +8,11 @@ import { useEffect, useState } from "react";
 import { IoChevronBack } from "react-icons/io5";
 import useIsMobile from "hooks/useIsMobile";
 import BackBtn from "components/common/BackBtn/BackBtn";
+import Hamberger from "components/common/Hamberger/Hamberger";
+
 const Header = () => {
   const isItMobile = useIsMobile();
+  const [isHamClicked, setHamClicked] = useState(false);
   useEffect(() => {
     console.log(isItMobile);
   }, [isItMobile]);
@@ -47,6 +50,7 @@ const Header = () => {
       ) : (
         <>
           <BackBtn />
+          <Hamberger />
         </>
       )}
     </S.HeaderStyleContainer>
