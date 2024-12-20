@@ -36,9 +36,9 @@ const ContentCard = ({ value }: { value: string }) => {
   if (!projectData) return <></>;
   return (
     <S.ContentCardStyleContainer>
-      {projectData.map((item, idx) => {
+      {projectData.map((item, i) => {
         return (
-          <InView key={idx} threshold={0.32} triggerOnce={true}>
+          <InView key={i} threshold={0.1} triggerOnce={true}>
             {({ inView, ref }) => (
               <div className="card-sec" ref={ref}>
                 <div className={inView ? "show title" : "title"}>

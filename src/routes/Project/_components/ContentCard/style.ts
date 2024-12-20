@@ -2,10 +2,10 @@ import { media } from "assets/media";
 import styled from "styled-components";
 export const ContentCardStyleContainer = styled.div`
   .card-sec {
-    margin-bottom: 13vh;
+    /* margin-bottom: 13vh; */
     position: relative;
     /* padding: 60px var(--mob-padding) 0; */
-    padding: 17vh 0px 0;
+    padding: 0vh 0px 15vh;
     ${media.phone`
       padding:14px;
     `}
@@ -21,12 +21,11 @@ export const ContentCardStyleContainer = styled.div`
     }
     .title {
       position: sticky;
-      top: 5vh;
+      top: 20px;
       font-size: 50px;
       font-weight: 500;
       ${media.phone`
         top:10px;
-        
         z-index:1;
       `}
 

@@ -3,9 +3,7 @@ import AppIcon from "../AppIcon/AppIcon";
 import { AppIconsProp } from "./interface";
 import * as S from "./style";
 import { useAppIconsStore, useModalBGStore } from "store/app";
-import { media } from "assets/media";
 const AppIcons = ({ icons, title, style }: AppIconsProp) => {
-  const conditionalStyle = media.phone ? {} : style;
   const { modalBGShowState, showModalBG } = useModalBGStore((state) => state);
   const [thisShowState, setShowState] = useState(false);
   const { openAppIcons, isOpened } = useAppIconsStore((state) => state);
@@ -20,7 +18,7 @@ const AppIcons = ({ icons, title, style }: AppIconsProp) => {
   }, [isOpened]);
   return (
     <S.AppIconsStyleContainer
-      style={media.phone ? style : {}}
+      style={style}
       $title={title}
       $length={icons.length > 4 ? "3n" : "2n"}
     >

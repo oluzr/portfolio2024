@@ -3,6 +3,7 @@ export const PostingStyleContainer = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  cursor: pointer;
   a {
     /* border: 1px solid red; */
     border-radius: 15px;

@@ -1,3 +1,4 @@
+import { media } from "assets/media";
 import styled from "styled-components";
 export const LocationInfoStyleContainer = styled.div`
   position: absolute;
@@ -12,6 +13,9 @@ export const LocationInfoStyleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  ${media.phone`
+  display: none;
+  `}
   .loc-left {
     display: flex;
     flex-direction: row;
@@ -27,7 +31,7 @@ export const LocationInfoStyleContainer = styled.div`
       font-size: 11px;
       font-weight: 300;
       color: #ddd;
-      svg{
+      svg {
         font-size: 12px;
       }
       &:hover {

@@ -18,6 +18,8 @@ export const LayoutStyleContainer = styled.main`
   ${media.phone`
     width:100%;
     border-radius:0;
+    height:100dvh;
+    padding:0px 0 0;
   `}
   section {
     /* transition: all 0.9s; */
@@ -26,7 +28,7 @@ export const LayoutStyleContainer = styled.main`
     padding: 20px 40px 60px;
     overflow-y: auto;
     ${media.phone`
-      padding: 0px;
+      padding: 70px 14px 0;
     `}
   }
 `;

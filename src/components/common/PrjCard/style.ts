@@ -1,6 +1,7 @@
 import styled, { css } from "styled-components";
 import { PrjCardStyleProp } from "./interface";
 export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
+margin-top: 14px;
   .inner {
     background-color: rgba(12, 109, 255, 0.1);
     border-radius: 20px;
