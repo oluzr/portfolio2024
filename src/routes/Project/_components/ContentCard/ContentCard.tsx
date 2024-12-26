@@ -3,6 +3,7 @@ import {
   OPTIMA_MOBILE_APP_DATA,
   OPTIMA_RX_DATA,
   OPTIMACARE_DATA,
+  SOM_DATA,
 } from "api/data";
 import { InView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
@@ -28,6 +29,12 @@ const ContentCard = ({ value }: { value: string }) => {
         return;
       case "lsp":
         setProjectData(LSP_DATA);
+        return;
+      case "som":
+        setProjectData(SOM_DATA);
+        return;
+      case "usports":
+        setProjectData(SOM_DATA);
         return;
       default:
         break;
@@ -90,6 +97,12 @@ const ContentCard = ({ value }: { value: string }) => {
                                       <PostingCard
                                         link={value2}
                                         title={value2}
+                                      />
+                                    ) : key2 === "img" ? (
+                                      <ChatBubble
+                                        img={value2}
+                                        side="right"
+                                        key={idx}
                                       />
                                     ) : (
                                       <ChatBubble

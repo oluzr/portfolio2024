@@ -1,7 +1,7 @@
 export interface PrjCardProp {
   title: string;
-  startDate: string;
-  endDate: string;
+  startDate?: string;
+  endDate?: string;
   linkTo?: string;
   subTitle?: string;
   contribution: number;

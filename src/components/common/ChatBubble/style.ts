@@ -27,7 +27,11 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
     line-height: 1.5;
     ${media.phone`
         /* width:100%; */
-        max-width:80%;
+        max-width:100%;
+        &:has(img){
+          width:100%;
+          max-width:100%;
+        }
       `}
     ${(prop) =>
       prop.$side === "left" &&

@@ -1,22 +1,13 @@
-import { Link } from "react-router-dom";
 import * as S from "./style";
 import AppIcon from "components/common/AppIcon/AppIcon";
 import AppIcons from "components/common/AppIcons/AppIcons";
-import { media } from "assets/media";
 import { constants } from "constants";
-import { useEffect, useState } from "react";
-import { IoChevronBack } from "react-icons/io5";
 import useIsMobile from "hooks/useIsMobile";
 import BackBtn from "components/common/BackBtn/BackBtn";
 import Hamberger from "components/common/Hamberger/Hamberger";
 
 const Header = () => {
   const isItMobile = useIsMobile();
-  const [isHamClicked, setHamClicked] = useState(false);
-  useEffect(() => {
-    console.log(isItMobile);
-  }, [isItMobile]);
-
   return (
     <S.HeaderStyleContainer>
       {!isItMobile ? (
@@ -50,8 +41,7 @@ const Header = () => {
       ) : (
         <>
           <BackBtn />
-            <Hamberger />
-          
+          <Hamberger />
         </>
       )}
     </S.HeaderStyleContainer>

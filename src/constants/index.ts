@@ -58,8 +58,8 @@ export const constants = {
       title: "works",
       subMenu: [
         {
-          title: "work",
-          link: "/work",
+          title: "works",
+          link: "/works",
         },
         {
           title: "optima app",
@@ -68,6 +68,14 @@ export const constants = {
         {
           title: "optima rx",
           link: "/works/optimaRx",
+        },
+        {
+          title: "optima care",
+          link: "/works/optimacare",
+        },
+        {
+          title: "lsp web site",
+          link: "/works/lsp",
         },
       ],
     },

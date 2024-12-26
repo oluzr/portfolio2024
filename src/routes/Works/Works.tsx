@@ -7,7 +7,7 @@ const Works = () => {
       <ul>
         {PRJ_CARDS_DATA.map((project, idx) => (
           <li key={idx}>
-            <PrjCard prjItem={project} />
+            <PrjCard showSubTitle={false} prjItem={project} />
           </li>
         ))}
       </ul>

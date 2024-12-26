@@ -3,16 +3,18 @@ import * as S from "./style";
 import { Link } from "react-router-dom";
 import { IoIosArrowDown, IoIosClose } from "react-icons/io";
 import { useState } from "react";
+import { useAsideState } from "store/app";
 const Aside = () => {
   const [openMenuIndex, setOpenMenuIndex] = useState<number | null>(null);
-
+  const { asideShowState, hideAside } = useAsideState((state) => state);
   const toggleSubMenu = (index: number) => {
     setOpenMenuIndex((prevIndex) => (prevIndex === index ? null : index));
   };
+  if (!asideShowState) return <></>;
   return (
     <S.AsideStyleContainer>
       <div className="inner">
-        <div className="close">
+        <div className="close" onClick={hideAside}>
           <IoIosClose />
         </div>
         <ul className="main-cate">
@@ -22,7 +24,7 @@ const Aside = () => {
                 <>
                   <p onClick={() => toggleSubMenu(idx)}>
                     {menu.title}
-                    <span>
+                    <span className={openMenuIndex === idx ? "open" : ""}>
                       <IoIosArrowDown />
                     </span>
                   </p>

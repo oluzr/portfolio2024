@@ -327,6 +327,112 @@ export default Image;`,
   },
 ];
 
+export const SOM_DATA: ProjectItemType = [
+  {
+    title: "알림 기능 구현에 대해 설명해줘",
+    contents: [
+      `서버와 SSE 단방향 연결 통신을 맺어 알림이 발생했을 경우 실시간 우측 아이콘 상태 변동
+클릭 시 서버로부터 전달받은 url로 라우팅`,
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/27c0a10c-c163-4224-ad2d-deaa57f94aa7/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B71.gif?table=block&id=85a43599-8e47-430e-b7e3-b76fda6ed1d3&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=b5Un79SGzQa27j7BvpF8Wt1mjpXKH3UV0NHcSNTetX4&downloadName=%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B71.gif",
+      },
+    ],
+  },
+  {
+    title: "react-query, useMutation 을 이용한 데이터 캐싱 및 업데이트 반영",
+    contents: [
+      "좋아요, 팔로우, 댓글 작성 및 삭제 시 기존 query 캐싱 초기화",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/9fa9739a-7512-402f-b366-a31c6d0ecde6/%E1%84%91%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%8B%E1%85%AE.gif?table=block&id=d502ef64-9543-49be-8c96-dfdd49a0959e&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=uhGwrCbehZpKZuf6GRQ9qMinB2xygzAPdJV-vtCoYzI&downloadName=%E1%84%91%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%8B%E1%85%AE.gif",
+      },
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/5959304b-e60c-4c73-9b01-3aa720802ce0/%E1%84%8C%E1%85%A9%E1%87%82%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%AD.gif?table=block&id=469efacf-7df1-47a9-a3c3-eaff05e66887&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=k62cof516NxwCpLmknm9ASAExnFqx3EArIzBLll9V3Q&downloadName=%E1%84%8C%E1%85%A9%E1%87%82%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%AD.gif",
+      },
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/addb56e4-7686-44f5-a5d2-f7342685ac38/%E1%84%83%E1%85%A2%E1%86%BA%E1%84%80%E1%85%B3%E1%86%AF.gif?table=block&id=718c54d9-a72f-47ff-b15d-d9e6d48684d1&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=imqpRcm51E6uoyxD7o2NVbG_avdjbrBq0EqqqBE5E_s&downloadName=%E1%84%83%E1%85%A2%E1%86%BA%E1%84%80%E1%85%B3%E1%86%AF.gif",
+      },
+      "react-query infinite Query 를 이용한 무한 스크롤 기능 구현",
+      "search param 을 이용한 게시글 필터링 작업",
+    ],
+  },
+  {
+    title: "필터링 검색 구현 관련해 작업했던 것들 알려줘",
+    contents: [
+      "블로그 페이지 내 필터링 (정렬 / 태그 / 검색어)",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/5d76d2b3-64c1-4f97-8671-da0c105de273/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC.gif?table=block&id=b1a75e2a-ab52-4bad-a78d-8b588cc096ae&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=tXXCcoVM5hGY__2e-8qQSMnYtfUcR_hY6e6bWOtyqFM&downloadName=%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC.gif",
+      },
+      "메인 페이지 내 필터링 (조회순, 최신순 정렬)",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/8e5cfc9a-caed-4c11-b06d-844e5900b3e9/%E1%84%92%E1%85%A9%E1%86%B7.gif?table=block&id=282204a8-5a8c-4c89-8761-e172337d3165&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=LlDMWT5pS-0fnz2aLOJhoOzyVt3OdTXA3Xoe0jPB6oA&downloadName=%E1%84%92%E1%85%A9%E1%86%B7.gif",
+      },
+      "검색 페이지 내 검색 기능 (타입: 제목 및 소개 / 내용 / 태그)",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/6b615a43-5362-4617-99ee-1016b8f908ee/%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8.gif?table=block&id=ab251e8e-636c-428d-9832-f5ede7e80752&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=BN7MNuX9En2HSfUc-TeotJp02u9uxDf_yIL8UV0Pk4I&downloadName=%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8.gif",
+      },
+    ],
+  },
+  {
+    title: "axios Interceptor 을 이용한 각종 API 요청 및 응답 핸들링 ",
+    contents: [
+      "(에러 발생 시) 클라이언트 측에 에러 메세지를 띄워줘야 하는 에러 코드는 따로 배열로 구분 / 서버로부터 응답받는 에러 메세지 (error객체 내부) 출력",
+      "유저 토큰(accessToken) 만료 시 refreshToken을 이용한 accessToken 재발급 및 요청 처리 등",
+      "관련 포스팅",
+      {
+        link: "https://velog.io/@oluzr/axios-axios-interceptor-이용하여-errorCode-띄우기",
+      },
+    ],
+  },
+  {
+    title: "react-quill 텍스트 라이브러리 활용하여 글 작성 및 수정",
+    contents: [
+      "하나의 text edit 컴포넌트로 글 최초 작성과 수정 진행. 글, 썸네일에 이용되는 이미지의 경우 파일 업로드 시 서버로 post 요청 후 반환받는 url 로 이미지 노출",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/1c2fbc00-2eae-4676-be5a-57b81e0465c9/%E1%84%80%E1%85%B3%E1%86%AF1.gif?table=block&id=a3a6b862-d110-48e2-8eee-16d8f5e31b10&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=jCYb55JzlFz14sKm4vf26-JtxcHs-C87HES2-OTre8A&downloadName=%E1%84%80%E1%85%B3%E1%86%AF1.gif",
+      },
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/cbcf09f7-0f32-46a8-a813-d60f0158cb20/%E1%84%80%E1%85%B3%E1%86%AF2.gif?table=block&id=bb5d7e6a-f556-4639-a00a-d36d156b0c82&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=sYrPLSAlfj2s2TKKihQ4hlk1F6Uu_UIUjNtcRMRaoaQ&downloadName=%E1%84%80%E1%85%B3%E1%86%AF2.gif",
+      },
+      `(수정 시) prop으로 글 데이터 전달
+(초기 작성 시) prop으로 전달받는 값이 없을 경우 초기 작성 상태라 치부`,
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/522c5023-8227-46f0-b9f7-7795caca7471/%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC1.gif?table=block&id=f093bb5b-bca7-4958-b685-7ef0e6b4ea64&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=Wxl_1hz09K7UsbvQdy5RMbMzwzcG7Rt3S3gYaX3eWrI&downloadName=%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC1.gif",
+      },
+    ],
+  },
+  {
+    title: "react-hook-form 활용",
+    contents: [
+      "실시간 유효성 검사에 따른 에러 메세지 출력",
+      "사전 유효성 검사를 거쳐 무분별한 서버 API 요청 방지",
+      "관련 포스팅",
+      {
+        link: "https://velog.io/@oluzr/react-hook-form-유효성-검사에-따른-조건부-클래스-작업-clsx-useForm",
+      },
+    ],
+  },
+  {
+    title: "반응형UI 및 테마 적용 관련해 작업한 것 알려줘",
+    contents: [
+      "tailwind css, daisyui 를 활용한 각종 테마 레이아웃 작업",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/74b82a7b-fdd8-4605-85e7-7ae0578c2ad1/%E1%84%90%E1%85%A6%E1%84%86%E1%85%A1.gif?table=block&id=21165a4e-a4e1-493e-869a-bcad3bad2bd6&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=ISfFjCaITHZA_ZA0QsLIf5oyfsu0oTZxTgSIqbXYU_Y&downloadName=%E1%84%90%E1%85%A6%E1%84%86%E1%85%A1.gif",
+      },
+
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/df7faea2-b669-4995-af66-0de65c25d6e1/%E1%84%90%E1%85%A6%E1%84%86%E1%85%A12.gif?table=block&id=0e54f5a0-4395-4665-935f-16e8a95189e6&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=ws_Si20un4qPIBGPaGQCd8lZwsUwOhPzBB-_lq6wnNw&downloadName=%E1%84%90%E1%85%A6%E1%84%86%E1%85%A12.gif",
+      },
+      "반응형 레이아웃 작업 진행 (pc, tablet, mobile)",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/8a6da988-3609-4be2-8081-1721447ae9f6/%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC1.gif?table=block&id=29bf9b01-ab85-418a-b9b3-7167eec02847&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=fwvoEVw2dsjXbwk6w1NnqSKu9ABaN4au63A-mifsT98&downloadName=%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC1.gif",
+      },
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/a1f13c00-e617-4338-9979-30842b2e809c/%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC3.gif?table=block&id=2a1b058d-0e4c-4a30-a07e-7da90505c1e8&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=NdtkXNALfKJC3SP0JdlgjtW5uzWxW0rlL11MEfGxIc0&downloadName=%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC3.gif",
+      },
+    ],
+  },
+];
+
 export const PRJ_CARDS_DATA: PrjCardProp[] = [
   {
     title: "옵티마 약사몰 모바일 APP",
@@ -343,6 +449,23 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
       "✔️ React 기반 웹뷰 개발",
       "✔️ 프론트 개발 담당",
       "✔️ 기여도 50% (프론트 2인 진행)",
+    ],
+  },
+  {
+    title: "옵티마 RX",
+    // startDate: "2024/07",
+    // endDate: "2024/10",
+    linkTo:
+      "https://play.google.com/store/apps/details?id=com.lspworld.optimapharmn&pli=1",
+    subTitle: "기존 ASP 사이트 유지보수 및 신규 리액트 페이지 개발",
+    contribution: 60,
+    participants: ["front"],
+    path: "/works/optimaRx",
+    keywords: [
+      "기존 ASP 사이트 유지보수 및 신규 리액트 페이지 개발",
+      "✔️ AI 소분판매 페이지 리액트 개발",
+      "✔️ SEO 최적화 작업",
+      "✔️ 전체 페이지 실행 코드 분석 및 정리",
     ],
   },
   {
@@ -380,6 +503,52 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     ],
     feedback: [
       "🗣️ 자사 사이트 리뉴얼을 통해 다양한 애니메이션과 일관되고 매끄러운 사용자 경험을 고려한 인터페이스를 구현하며 브랜드의 메시지를 명확하게 전달하기 위해 노력하였습니다",
+    ],
+  },
+];
+export const SIDEPRJ_CARDS_DATE: PrjCardProp[] = [
+  {
+    title: "SOM",
+    startDate: "2024/01",
+    endDate: "2024/02",
+    linkTo: "https://github.com/LeeAndRyu",
+    subTitle:
+      "블로그 서비스 앱으로 쉽고 간편한 블로그 개설을 통해 유저 간 팔로우, 좋아요, 댓글을 주고받을 수 있습니다.",
+    contribution: 100,
+    participants: ["front", "back"],
+    path: "/works/som",
+    keywords: [
+      "📅 2024.01~2024.02",
+      "✔️ 프론트 개발 전담",
+      "✔️ SSE 통신을 활용한 실시간 알림 기능",
+    ],
+    feedback: [
+      `🗣️ USports 프로젝트를 끝내자마자 바로 진행됐던 SOM! 
+텍스트 에디터 라이브러리를 다뤄보고 싶어 블로그로 가닥을 잡고, 여러 보기들 중 비록 마크다운 형식은 아니지만 그래도 가장 안정적이고 이미지 리사이징이 가능한 react-quill 라이브러리를 사용했다. 
+함께 협력한 백엔드 개발자분과는 USports 에서 한 번 호흡을 맞춰봐서인지 원활한 진행 덕에 예정보다 일찍 기능 개발을 마무리 짓고 반응형 작업과 세부적인 디테일 작업을 포함하여 전반적인 완성도를 높일 수 있었다. 비로그인 상태일 때도 마이페이지를 제외한 모든 페이지에 접근이 가능한 서비스인 만큼, 로그인/비로그인 상태를 판별하여 서비스 기능 사용 권한과 메뉴 보기에 차별화 두는 작업을 진행했다. daisyui를 활용하여 여러 가지 테마를 선택할 수 있게 작업하고 로그인 페이지의 백그라운드에는 spline 3d 컴포넌트를 활용하는 등 디자인적으로 다양한 시도를 해볼 수 있어 좋았고 또 그만큼 디자인 완성도도 높일 수 있어 개인적으로 정말 즐거운 프로젝트였다`,
+    ],
+  },
+  {
+    title: "usports",
+    startDate: "2023/11",
+    endDate: "2024/01",
+    linkTo:
+      "https://helloworldusports.notion.site/USPORTS-SNS-c10174ce56d7451094935fc9d4b4765f",
+    subTitle: `각자의 운동 기록 을 공유할 수 있고, 같이 운동할 사람들을 모집할 수 있습니다.`,
+    contribution: 99,
+    participants: ["front", "back", "back", "back"],
+    path: "/works/usports",
+    keywords: [
+      "📅 2023.11~2024.01",
+      "✔️ 프론트 개발 전담",
+      "✔️ 운동 전문 SNS",
+      "✔️ Next.js 14버전 (app router) 개발",
+    ],
+    feedback: [
+      `
+       🗣️ 프로젝트를 하면서 느꼈던 것은 프론트엔드와 백엔드 모두 각자 포지션에서 역할의 최대치를 수행했을 때 그만큼 협업 과정이 수월해지고 프로젝트 완성도가 올라간다는 것이다. 물론 우리 모두 아직은 아마추어들이지만, 팀원들이 전부 열정적이고 적극적으로 임하는 것을 보고 이 프로젝트에서 정말 많은 동기부여를 얻고 가는 것 같다. 
+ 프론트엔드 인원 관련 이슈로 인해 프로젝트 중후반부터는 혼자 프론트를 전담하게 됐는데, 나머지 팀원분들이 그런 상황들을 많이 고려해 최대한 배려를 해주셔서 감사했다. 비록 개발 작업 진도가 늦어졌지만 조급한 마음에 엉성하게 짜맞춰 끝내는 것 보단, 모두가 차분하게 프로젝트에 집중하면서 완성도를 높이기 위해 노력하는 것이 느껴졌다. 
+ 데모데이 이후 추가로 2주간 모여서 못다한 기능 개발을 진행하게 됐는데, 지금껏 한 번도 다뤄보지 않았던 기능들을 배워 볼 생각에 설렌다. 하나도 힘들지 않았다면 거짓말이겠지만, 그걸 상쇄할 만큼 정말 뿌듯하고 즐거운 프로젝트였다! `,
     ],
   },
 ];

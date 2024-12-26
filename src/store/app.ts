@@ -10,7 +10,11 @@ interface AppIconsState {
   openAppIcons: () => void;
   closeAppIcons: () => void;
 }
-
+interface AsideState {
+  asideShowState: boolean;
+  showAside: () => void;
+  hideAside: () => void;
+}
 export const useModalBGStore = create<ModalBGState>((set) => ({
   modalBGShowState: false,
   showModalBG: () => set({ modalBGShowState: true }),
@@ -29,4 +33,10 @@ export const useAppIconsStore = create<AppIconsState>((set) => ({
     hideModalBG();
     set({ isOpened: false });
   },
+}));
+
+export const useAsideState = create<AsideState>((set) => ({
+  asideShowState: false,
+  showAside: () => set({ asideShowState: true }),
+  hideAside: () => set({ asideShowState: false }),
 }));

@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 import { PrjCardStyleProp } from "./interface";
 export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
-margin-top: 14px;
+  margin-top: 14px;
   .inner {
     background-color: rgba(12, 109, 255, 0.1);
     border-radius: 20px;
@@ -10,15 +10,29 @@ margin-top: 14px;
     padding: 24px 25px;
     gap: 30px;
     color: #e5e5ea;
+    &:not(:has(.date)) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .prj-top {
+        flex: 1;
+      }
+    }
     .prj-top {
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-between;
       h3 {
         max-width: 90%;
         font-size: 27px;
         line-height: 1.2;
         font-weight: 400;
+      }
+      p{
+        margin-top: 14px;
+        font-size: 14px;
+        white-space: pre-line;
+        line-height: 1.6;
       }
       ul {
         display: flex;
@@ -33,6 +47,7 @@ margin-top: 14px;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
       .goto-site {
         a {
           display: flex;

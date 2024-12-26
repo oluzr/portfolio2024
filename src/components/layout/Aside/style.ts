@@ -6,6 +6,7 @@ export const AsideStyleContainer = styled.aside<AsideStyleProp>`
   height: 100%;
   overflow-y: auto;
   background-color: #00000099;
+  backdrop-filter: blur(20px);
   z-index: 100;
 
   .inner {
@@ -22,7 +23,7 @@ export const AsideStyleContainer = styled.aside<AsideStyleProp>`
       display: flex;
       flex-direction: column;
       width: 100%;
-      gap: 30px;
+      gap: 20px;
       & > li {
         & > a {
           display: flex;
@@ -41,21 +42,27 @@ export const AsideStyleContainer = styled.aside<AsideStyleProp>`
             display: flex;
             align-items: center;
             justify-content: center;
+            transition: all 0.2s;
+            transform-origin: center center;
+            &.open {
+              transform: rotate(180deg);
+            }
           }
         }
         ul.sub-cate {
-          padding: 20px 20px 10px;
           display: flex;
           flex-direction: column;
           gap: 18px;
           list-style: none;
-          max-height: 0; /* 기본 높이 0 */
-          opacity: 0; /* 기본 투명도 0 */
-          overflow: hidden; /* 높이 넘어가는 콘텐츠 숨김 */
-          transition: all 0.3s ease; /* 부드러운 애니메이션 효과 */
+          max-height: 0;
+          opacity: 0;
+          overflow: hidden;
+          transition: all 0.3s ease;
+          padding: 0px 20px;
           &.open {
-            max-height: 200px; /* 서브 메뉴의 최대 높이 (내용에 따라 조정 가능) */
-            opacity: 1; /* 투명도 1로 설정 */
+            padding: 20px 20px 10px;
+            max-height: 200px;
+            opacity: 1;
           }
           li {
             a {
