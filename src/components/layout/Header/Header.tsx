@@ -50,7 +50,8 @@ const Header = () => {
       ) : (
         <>
           <BackBtn />
-          <Hamberger />
+            <Hamberger />
+          
         </>
       )}
     </S.HeaderStyleContainer>

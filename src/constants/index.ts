@@ -43,4 +43,50 @@ export const constants = {
       linkTo: "https://github.com/oluzr",
     },
   ],
+  ASIDE_MEMU: [
+    { title: "홈", link: "" },
+    {
+      title: "about me",
+      subMenu: [
+        { title: "intro", link: "/intro" },
+        { title: "archive", link: "/archive" },
+        { title: "⤷github", link: "https://github.com/oluzr" },
+        { title: "⤷velog", link: "https://github.com/oluzr" },
+      ],
+    },
+    {
+      title: "works",
+      subMenu: [
+        {
+          title: "work",
+          link: "/work",
+        },
+        {
+          title: "optima app",
+          link: "/works/optimaApp",
+        },
+        {
+          title: "optima rx",
+          link: "/works/optimaRx",
+        },
+      ],
+    },
+    {
+      title: "side projects",
+      subMenu: [
+        {
+          title: "side projects",
+          link: "/sideProjects",
+        },
+        {
+          title: "som",
+          link: "/works/som",
+        },
+        {
+          title: "usports",
+          link: "/works/usports",
+        },
+      ],
+    },
+  ],
 };
