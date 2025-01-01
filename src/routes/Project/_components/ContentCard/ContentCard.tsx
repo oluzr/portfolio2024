@@ -4,6 +4,7 @@ import {
   OPTIMA_RX_DATA,
   OPTIMACARE_DATA,
   SOM_DATA,
+  USPORTS_DATA,
 } from "api/data";
 import { InView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
@@ -34,7 +35,7 @@ const ContentCard = ({ value }: { value: string }) => {
         setProjectData(SOM_DATA);
         return;
       case "usports":
-        setProjectData(SOM_DATA);
+        setProjectData(USPORTS_DATA);
         return;
       default:
         break;

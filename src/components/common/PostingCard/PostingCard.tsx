@@ -3,16 +3,14 @@ import { PostingCardProp } from "./interface";
 import * as S from "./style";
 import Image from "../Image/Image";
 const PostingCard = ({ link, title }: PostingCardProp) => {
-  function extractKoreanTitleFromURL(url: any) {
-    if (!url) return;
+  function extractTitleFromURL(url: string): string {
+    if (!url) return "";
     try {
-      const titlePart = decodeURIComponent(url.split("/").pop());
-      const koreanTitle =
-        titlePart.match(/[가-힣]+/g)?.join(" ") || "No Korean title found";
-      return koreanTitle;
+      const titlePart = url.split("@")[1]?.split("/")[1]; // @ 이후와 / 이후 추출
+      return titlePart || ""; // 값이 없으면 공백 반환
     } catch (error) {
       console.error("Error extracting title:", error);
-      return null;
+      return "";
     }
   }
   return (
@@ -20,7 +18,7 @@ const PostingCard = ({ link, title }: PostingCardProp) => {
       <Link to={link}>
         <Image src="/assets/images/avatar1.png" />
         {title ? (
-          <p>{extractKoreanTitleFromURL(title)}</p>
+          <p>{extractTitleFromURL(title)}</p>
         ) : (
           <p>관련 포스팅 보기</p>
         )}

@@ -433,6 +433,105 @@ export const SOM_DATA: ProjectItemType = [
   },
 ];
 
+export const USPORTS_DATA: ProjectItemType = [
+  {
+    title: "Next.js 14 버전 (app router) 진행",
+    contents: [
+      "parallel routes, intercepting routes 활용하여 각종 페이지 모달 형식 구현",
+      {
+        "middleware 를 이용하여 각종 요청 및 응답 핸들링": [
+          "쿠키에 저장된 유저 토큰 헤더 설정",
+          "유저 로그인 상태에 따른 페이지 리다이렉트 설정",
+        ],
+      },
+      {
+        code: `import { NextRequest, NextResponse } from 'next/server'
+import { cookies } from 'next/headers'
+import { setHeaderToken } from './func/fetchCall'
+export async function middleware(request: NextRequest) {
+ㅤconst cookieStore = cookies()
+ㅤconst accessToken = cookieStore.get('accessToken')
+ㅤ//쿠키에 저장된 accessToken 값 여부 확인
+ㅤif (!accessToken) {
+ㅤㅤreturn NextResponse.redirect('/login') // 없다면 미로그인 상태로 인지
+ㅤ}
+ㅤsetHeaderToken(accessToken + '')
+ㅤif (
+ㅤㅤrequest.nextUrl.pathname.startsWith('/login') || 
+ㅤㅤrequest.nextUrl.pathname.startsWith('/createAccount')
+ㅤ) { // 요청 url이 Login이거나 createAccount일 경우 && 토큰값이 있다면 
+ㅤ// 로그인된 상태로 인지, Home 으로 redirect
+ㅤif (accessToken) return NextResponse.redirect('/home') 
+}
+}`,
+      },
+      "관련 포스팅",
+      { link: "https://velog.io/@oluzr/Next14-middleware" },
+    ],
+  },
+  {
+    title: "SSE 통신을 이용한 실시간 알림 구현",
+    contents: [
+      "새로운 알림이 왔을 경우 상단 팝업으로 알림 내용 노출, 좌측 알림 탭 상태 변동",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/69f9634f-d9af-4a02-8c44-b1550abbf6f7/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B7.gif?table=block&id=d92e6d9a-5e8c-436b-8a0e-ecf55263660e&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=JOVKNMCqhOuYWGdJ-N_esIMNBvokNuUm4p1eGFJh9vI&downloadName=%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B7.gif",
+      },
+      "request header에 유저 인증 토큰을 포함시키기 위해 EventSourcePolyfill 활용",
+      {
+        link: "https://velog.io/@oluzr/Next.js14-SSE를-통한-알림-구현",
+      },
+    ],
+  },
+  {
+    title: "웹소켓 (Stomp.js) 을 활용한 실시간 1:1 및 그룹 채팅 구현",
+    contents: [
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/12279304-3471-4801-9898-792e03bae65a/%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC1.gif?table=block&id=a2f1e06e-ab29-41ac-b9c1-48ec5a185ab2&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=QYbp-p6BhckiB0_oTJP9w4ciKp0aC1WbHubVL1g86w4&downloadName=%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC1.gif",
+      },
+      "useInfiniteQuery + intersection observer 을 이용한 리버스 인피니트 스크롤링 구현",
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/15eaf4d2-4218-40b0-8f53-b2237f0093fc/%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC2.gif?table=block&id=7bd0a44e-c4c4-4057-9012-6422ad600e61&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=p313bG3S_LkIDVqQyzdv8X1W7KDvT_N0oU6-cvymJfs&downloadName=%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC2.gif",
+      },
+      "webSocketFactory 을 이용해 웹소켓이 지원되지 않는 환경에서는 xhr 폴링 메커니즘 제공",
+      {
+        code: `
+        const client = new StompJs.Client({
+        webSocketFactory: () =>
+          new SockJS('https://3.39.34.245.nip.io/ws/chat'),
+        connectHeaders: {
+          Authorization: Bearer userToken,
+        },
+        reconnectDelay: 50000,
+        heartbeatIncoming: 10000,
+        heartbeatOutgoing: 10000,
+      })
+        `,
+      },
+    ],
+  },
+  {
+    title: "kakao API 활용",
+    contents: [
+      "카카오 지도 API 활용하여 모집 장소 위치 → 지도 화면으로 출력 (위도, 경도)",
+      "카카오 간편 로그인 구현",
+      {
+        link: "https://velog.io/@oluzr/Next.js14-카카오-간편-로그인-구현",
+      },
+    ],
+  },
+  {
+    title: "search param 을 이용한 검색 및 필터링",
+    contents: [
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/416105ec-10c8-4d2d-a4fb-638e1e29b8cc/%E1%84%90%E1%85%A1%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8P.gif?table=block&id=d3a828e7-eabd-4059-bb4a-9fc45c707e50&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=6AjtAX631UgI29eMzmlIo7iaqDz95THU7uQ5fm5wMeo&downloadName=%E1%84%90%E1%85%A1%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8P.gif",
+      },
+      {
+        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/c5febbaa-aac7-430c-b755-382c4ce35ce3/%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC2.gif?table=block&id=57df1be0-4491-4675-b8a1-c9ddc21c41bd&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=3w_A_mnFMaQzhYs_-y04Qo_7m8anEDeK133bxIqZHAs&downloadName=%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC2.gif",
+      },
+    ],
+  },
+];
+
 export const PRJ_CARDS_DATA: PrjCardProp[] = [
   {
     title: "옵티마 약사몰 모바일 APP",

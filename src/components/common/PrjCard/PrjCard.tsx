@@ -5,9 +5,11 @@ import Button from "../Button/Button";
 const PrjCard = ({
   prjItem,
   showSubTitle = false,
+  showPath = true,
 }: {
   prjItem: PrjCardProp;
   showSubTitle?: boolean;
+  showPath?: boolean;
 }) => {
   const navigete = useNavigate();
   return (
@@ -25,7 +27,7 @@ const PrjCard = ({
               <span>Start</span>
             </div>
           )}
-          {prjItem.path && (
+          {prjItem.path && showPath && (
             <div className="goto-site">
               <Button
                 innerTxt="view more"

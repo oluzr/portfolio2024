@@ -8,7 +8,7 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
     display: flex;
     flex-direction: column;
     padding: 24px 25px;
-    gap: 30px;
+    gap: 30px 0;
     color: #e5e5ea;
     &:not(:has(.date)) {
       flex-direction: row;

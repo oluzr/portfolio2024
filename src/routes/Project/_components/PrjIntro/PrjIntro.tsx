@@ -34,7 +34,9 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
 
   return (
     <S.PrjIntroStyleContainer>
-      {projectData && <PrjCard showSubTitle={true} prjItem={projectData} />}
+      {projectData && (
+        <PrjCard showPath={false} showSubTitle={true} prjItem={projectData} />
+      )}
       {(projectData?.keywords || projectData?.feedback) && (
         <div className="info-wrap">
           <div className="inner">
@@ -44,7 +46,6 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
                 <Feedback feedback={projectData.keywords} />
               </>
             )}
-            
           </div>
         </div>
       )}
