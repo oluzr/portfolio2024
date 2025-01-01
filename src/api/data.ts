@@ -334,7 +334,7 @@ export const SOM_DATA: ProjectItemType = [
       `서버와 SSE 단방향 연결 통신을 맺어 알림이 발생했을 경우 실시간 우측 아이콘 상태 변동
 클릭 시 서버로부터 전달받은 url로 라우팅`,
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/27c0a10c-c163-4224-ad2d-deaa57f94aa7/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B71.gif?table=block&id=85a43599-8e47-430e-b7e3-b76fda6ed1d3&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=b5Un79SGzQa27j7BvpF8Wt1mjpXKH3UV0NHcSNTetX4&downloadName=%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B71.gif",
+        img: "/assets/gif/som-noti.gif",
       },
     ],
   },
@@ -343,13 +343,13 @@ export const SOM_DATA: ProjectItemType = [
     contents: [
       "좋아요, 팔로우, 댓글 작성 및 삭제 시 기존 query 캐싱 초기화",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/9fa9739a-7512-402f-b366-a31c6d0ecde6/%E1%84%91%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%8B%E1%85%AE.gif?table=block&id=d502ef64-9543-49be-8c96-dfdd49a0959e&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=uhGwrCbehZpKZuf6GRQ9qMinB2xygzAPdJV-vtCoYzI&downloadName=%E1%84%91%E1%85%A1%E1%86%AF%E1%84%85%E1%85%A9%E1%84%8B%E1%85%AE.gif",
+        img: "/assets/gif/som-follow.gif",
       },
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/5959304b-e60c-4c73-9b01-3aa720802ce0/%E1%84%8C%E1%85%A9%E1%87%82%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%AD.gif?table=block&id=469efacf-7df1-47a9-a3c3-eaff05e66887&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=k62cof516NxwCpLmknm9ASAExnFqx3EArIzBLll9V3Q&downloadName=%E1%84%8C%E1%85%A9%E1%87%82%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%AD.gif",
+        img: "/assets/gif/som-like.gif",
       },
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/addb56e4-7686-44f5-a5d2-f7342685ac38/%E1%84%83%E1%85%A2%E1%86%BA%E1%84%80%E1%85%B3%E1%86%AF.gif?table=block&id=718c54d9-a72f-47ff-b15d-d9e6d48684d1&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=imqpRcm51E6uoyxD7o2NVbG_avdjbrBq0EqqqBE5E_s&downloadName=%E1%84%83%E1%85%A2%E1%86%BA%E1%84%80%E1%85%B3%E1%86%AF.gif",
+        img: "/assets/gif/som-commend.gif",
       },
       "react-query infinite Query 를 이용한 무한 스크롤 기능 구현",
       "search param 을 이용한 게시글 필터링 작업",
@@ -360,15 +360,15 @@ export const SOM_DATA: ProjectItemType = [
     contents: [
       "블로그 페이지 내 필터링 (정렬 / 태그 / 검색어)",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/5d76d2b3-64c1-4f97-8671-da0c105de273/%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC.gif?table=block&id=b1a75e2a-ab52-4bad-a78d-8b588cc096ae&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=tXXCcoVM5hGY__2e-8qQSMnYtfUcR_hY6e6bWOtyqFM&downloadName=%E1%84%87%E1%85%B3%E1%86%AF%E1%84%85%E1%85%A9%E1%84%80%E1%85%B3%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC.gif",
+        img: "/assets/gif/som-blogfilter.gif",
       },
       "메인 페이지 내 필터링 (조회순, 최신순 정렬)",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/8e5cfc9a-caed-4c11-b06d-844e5900b3e9/%E1%84%92%E1%85%A9%E1%86%B7.gif?table=block&id=282204a8-5a8c-4c89-8761-e172337d3165&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=LlDMWT5pS-0fnz2aLOJhoOzyVt3OdTXA3Xoe0jPB6oA&downloadName=%E1%84%92%E1%85%A9%E1%86%B7.gif",
+        img: "/assets/gif/som-home.gif",
       },
       "검색 페이지 내 검색 기능 (타입: 제목 및 소개 / 내용 / 태그)",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/6b615a43-5362-4617-99ee-1016b8f908ee/%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8.gif?table=block&id=ab251e8e-636c-428d-9832-f5ede7e80752&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=BN7MNuX9En2HSfUc-TeotJp02u9uxDf_yIL8UV0Pk4I&downloadName=%E1%84%80%E1%85%A5%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8.gif",
+        img: "/assets/gif/som-search.gif",
       },
     ],
   },
@@ -388,15 +388,15 @@ export const SOM_DATA: ProjectItemType = [
     contents: [
       "하나의 text edit 컴포넌트로 글 최초 작성과 수정 진행. 글, 썸네일에 이용되는 이미지의 경우 파일 업로드 시 서버로 post 요청 후 반환받는 url 로 이미지 노출",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/1c2fbc00-2eae-4676-be5a-57b81e0465c9/%E1%84%80%E1%85%B3%E1%86%AF1.gif?table=block&id=a3a6b862-d110-48e2-8eee-16d8f5e31b10&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=jCYb55JzlFz14sKm4vf26-JtxcHs-C87HES2-OTre8A&downloadName=%E1%84%80%E1%85%B3%E1%86%AF1.gif",
+        img: "/assets/gif/som-write.gif",
       },
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/cbcf09f7-0f32-46a8-a813-d60f0158cb20/%E1%84%80%E1%85%B3%E1%86%AF2.gif?table=block&id=bb5d7e6a-f556-4639-a00a-d36d156b0c82&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=sYrPLSAlfj2s2TKKihQ4hlk1F6Uu_UIUjNtcRMRaoaQ&downloadName=%E1%84%80%E1%85%B3%E1%86%AF2.gif",
+        img: "/assets/gif/som-write2.gif",
       },
       `(수정 시) prop으로 글 데이터 전달
 (초기 작성 시) prop으로 전달받는 값이 없을 경우 초기 작성 상태라 치부`,
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/522c5023-8227-46f0-b9f7-7795caca7471/%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC1.gif?table=block&id=f093bb5b-bca7-4958-b685-7ef0e6b4ea64&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=Wxl_1hz09K7UsbvQdy5RMbMzwzcG7Rt3S3gYaX3eWrI&downloadName=%E1%84%89%E1%85%AE%E1%84%8C%E1%85%A5%E1%86%BC1.gif",
+        img: "/assets/gif/som-rewrite.gif",
       },
     ],
   },
@@ -416,18 +416,15 @@ export const SOM_DATA: ProjectItemType = [
     contents: [
       "tailwind css, daisyui 를 활용한 각종 테마 레이아웃 작업",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/74b82a7b-fdd8-4605-85e7-7ae0578c2ad1/%E1%84%90%E1%85%A6%E1%84%86%E1%85%A1.gif?table=block&id=21165a4e-a4e1-493e-869a-bcad3bad2bd6&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=ISfFjCaITHZA_ZA0QsLIf5oyfsu0oTZxTgSIqbXYU_Y&downloadName=%E1%84%90%E1%85%A6%E1%84%86%E1%85%A1.gif",
+        img: "/assets/gif/som-theme.gif",
       },
 
-      {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/df7faea2-b669-4995-af66-0de65c25d6e1/%E1%84%90%E1%85%A6%E1%84%86%E1%85%A12.gif?table=block&id=0e54f5a0-4395-4665-935f-16e8a95189e6&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=ws_Si20un4qPIBGPaGQCd8lZwsUwOhPzBB-_lq6wnNw&downloadName=%E1%84%90%E1%85%A6%E1%84%86%E1%85%A12.gif",
-      },
       "반응형 레이아웃 작업 진행 (pc, tablet, mobile)",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/8a6da988-3609-4be2-8081-1721447ae9f6/%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC1.gif?table=block&id=29bf9b01-ab85-418a-b9b3-7167eec02847&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=fwvoEVw2dsjXbwk6w1NnqSKu9ABaN4au63A-mifsT98&downloadName=%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC1.gif",
+        img: "/assets/gif/som-size1.gif",
       },
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/a1f13c00-e617-4338-9979-30842b2e809c/%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC3.gif?table=block&id=2a1b058d-0e4c-4a30-a07e-7da90505c1e8&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=NdtkXNALfKJC3SP0JdlgjtW5uzWxW0rlL11MEfGxIc0&downloadName=%E1%84%87%E1%85%A1%E1%86%AB%E1%84%8B%E1%85%B3%E1%86%BC%E1%84%92%E1%85%A7%E1%86%BC3.gif",
+        img: "/assets/gif/som-size2.gif",
       },
     ],
   },
@@ -474,7 +471,7 @@ export async function middleware(request: NextRequest) {
     contents: [
       "새로운 알림이 왔을 경우 상단 팝업으로 알림 내용 노출, 좌측 알림 탭 상태 변동",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/69f9634f-d9af-4a02-8c44-b1550abbf6f7/%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B7.gif?table=block&id=d92e6d9a-5e8c-436b-8a0e-ecf55263660e&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=JOVKNMCqhOuYWGdJ-N_esIMNBvokNuUm4p1eGFJh9vI&downloadName=%E1%84%8B%E1%85%A1%E1%86%AF%E1%84%85%E1%85%B5%E1%86%B7.gif",
+        img: "/assets/gif/us-noti.gif",
       },
       "request header에 유저 인증 토큰을 포함시키기 위해 EventSourcePolyfill 활용",
       {
@@ -486,11 +483,11 @@ export async function middleware(request: NextRequest) {
     title: "웹소켓 (Stomp.js) 을 활용한 실시간 1:1 및 그룹 채팅 구현",
     contents: [
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/12279304-3471-4801-9898-792e03bae65a/%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC1.gif?table=block&id=a2f1e06e-ab29-41ac-b9c1-48ec5a185ab2&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=QYbp-p6BhckiB0_oTJP9w4ciKp0aC1WbHubVL1g86w4&downloadName=%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC1.gif",
+        img: "/assets/gif/us-chat1.gif",
       },
       "useInfiniteQuery + intersection observer 을 이용한 리버스 인피니트 스크롤링 구현",
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/15eaf4d2-4218-40b0-8f53-b2237f0093fc/%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC2.gif?table=block&id=7bd0a44e-c4c4-4057-9012-6422ad600e61&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=p313bG3S_LkIDVqQyzdv8X1W7KDvT_N0oU6-cvymJfs&downloadName=%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC2.gif",
+        img: "/assets/gif/us-chat2.gif",
       },
       "webSocketFactory 을 이용해 웹소켓이 지원되지 않는 환경에서는 xhr 폴링 메커니즘 제공",
       {
@@ -523,10 +520,7 @@ export async function middleware(request: NextRequest) {
     title: "search param 을 이용한 검색 및 필터링",
     contents: [
       {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/416105ec-10c8-4d2d-a4fb-638e1e29b8cc/%E1%84%90%E1%85%A1%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8P.gif?table=block&id=d3a828e7-eabd-4059-bb4a-9fc45c707e50&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=6AjtAX631UgI29eMzmlIo7iaqDz95THU7uQ5fm5wMeo&downloadName=%E1%84%90%E1%85%A1%E1%86%B7%E1%84%89%E1%85%A2%E1%86%A8P.gif",
-      },
-      {
-        img: "https://file.notion.so/f/f/d0693a92-488b-47fb-874c-40973d6a3a97/c5febbaa-aac7-430c-b755-382c4ce35ce3/%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC2.gif?table=block&id=57df1be0-4491-4675-b8a1-c9ddc21c41bd&spaceId=d0693a92-488b-47fb-874c-40973d6a3a97&expirationTimestamp=1735286400000&signature=3w_A_mnFMaQzhYs_-y04Qo_7m8anEDeK133bxIqZHAs&downloadName=%E1%84%91%E1%85%B5%E1%86%AF%E1%84%90%E1%85%A5%E1%84%85%E1%85%B5%E1%86%BC2.gif",
+        img: "/assets/gif/us-filter.gif",
       },
     ],
   },
