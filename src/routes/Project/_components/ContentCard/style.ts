@@ -28,6 +28,10 @@ export const ContentCardStyleContainer = styled.div`
         top:10px;
         z-index:1;
       `}
+      ${media.tablet`
+        top:10px;
+        z-index:1;
+      `}
 
       &.show > * {
         opacity: 1;

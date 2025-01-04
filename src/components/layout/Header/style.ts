@@ -13,4 +13,5 @@ export const HeaderStyleContainer = styled.header`
     z-index:10;
     justify-content:space-between
   `}
+  
 `;

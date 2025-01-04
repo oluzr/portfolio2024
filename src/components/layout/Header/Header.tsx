@@ -19,11 +19,11 @@ const Header = () => {
             style={{ top: "10%", right: "10%", position: "fixed" }}
           />
           <AppIcons
-            title="works"
+            title="회사 프로젝트"
             icons={constants.APPICONS_1}
             style={{
               top: "30%",
-              left: "5%",
+              left: "4.5%",
               position: "fixed",
               transformOrigin: "left bottom",
             }}
@@ -34,6 +34,15 @@ const Header = () => {
             style={{
               bottom: "30%",
               right: "5%",
+              position: "fixed",
+            }}
+          />
+          <AppIcons
+            title="사이드 프로젝트"
+            icons={constants.APPICONS_3}
+            style={{
+              bottom: "30%",
+              left: "4.5%",
               position: "fixed",
             }}
           />

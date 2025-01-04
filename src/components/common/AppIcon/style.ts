@@ -9,7 +9,7 @@ export const AppIconStyleContainer = styled.div<AppIconStyleProp>`
   justify-content: center;
   z-index: 1;
   .app-icon-img {
-    border-radius: 13px;
+    border-radius: 6px;
     width: 80px;
     aspect-ratio: 1/1;
     /* border: 1px solid #ddd; */

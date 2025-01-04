@@ -33,6 +33,14 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
           max-width:100%;
         }
       `}
+    ${media.tablet`
+        /* width:100%; */
+        max-width:100%;
+        &:has(img){
+          width:100%;
+          max-width:100%;
+        }
+      `}
     ${(prop) =>
       prop.$side === "left" &&
       css`

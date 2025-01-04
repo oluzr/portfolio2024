@@ -10,7 +10,6 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
 
   &:has(.clicked) {
     z-index: 4;
-
   }
   p.title {
     color: #fff;
@@ -20,10 +19,10 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
     font-size: 13px;
   }
   .app-icons {
-    border-radius: 20px;
+    border-radius: 12px;
     backdrop-filter: blur(10px);
     background-color: #ffffff34;
-    transform: scale(0.4);
+    transform: scale(1);
     transition: all 0.3s;
     transform-origin: center bottom;
     position: relative;
@@ -53,7 +52,7 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
       transition: all 0.5s;
     }
     &.clicked {
-      transform: scale(1);
+      transform: scale(1.3);
 
       & + p {
         opacity: 0;
@@ -69,7 +68,15 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
         display: block;
       }
       ul {
-        width: 228px;
+        width: 218px;
+        gap: 10px 18px;
+        padding: 20px;
+        li {
+          .app-icon-img {
+            width: 80px;
+            border-radius: 10px;
+          }
+        }
         p {
           display: block;
         }
@@ -80,11 +87,16 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
       flex-direction: row;
       flex-wrap: wrap;
       /* justify-content: space-around; */
-      gap: 15px 22px;
-      padding: 23px;
-      width: 230px;
-      li p {
-        display: none;
+      gap: 10px;
+      padding: 10px;
+      width: 105px;
+      li {
+        .app-icon-img {
+          width: 37px;
+        }
+        p {
+          display: none;
+        }
       }
     }
   }

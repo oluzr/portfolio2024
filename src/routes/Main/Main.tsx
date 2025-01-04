@@ -1,6 +1,11 @@
+import CursorAnimation from "components/common/Cursor/Cursor";
 import * as S from "./style";
 const Main = () => {
-  return <S.MainStyleContainer><h1>Main</h1></S.MainStyleContainer>;
+  return <S.MainStyleContainer>
+
+
+
+  </S.MainStyleContainer>;
 };
 
 export default Main;
