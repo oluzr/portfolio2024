@@ -2,7 +2,7 @@ export const constants = {
   APPICONS_1: [
     {
       imgUrl: "/assets/images/fish1.png",
-      iconName: "전체 보기",
+      iconName: "In LSP",
       linkTo: "/works",
     },
     {
