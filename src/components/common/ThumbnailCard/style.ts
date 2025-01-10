@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components";
 import { StyleProp } from "./interface";
+import { media } from "assets/media";
 export const ThumbnailStyleContainer = styled.div<StyleProp>`
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -15,7 +16,13 @@ export const ThumbnailStyleContainer = styled.div<StyleProp>`
     ${(props) =>
       props.$size === "full" &&
       css`
-        aspect-ratio: 3;
+        aspect-ratio: 3.5;
+        ${media.phone`
+          aspect-ratio: 2.5;
+        `}
+        ${media.tablet`
+          aspect-ratio: 2.5;
+        `}
       `}
     ${(props) =>
       props.$size === "square" &&
@@ -30,6 +37,7 @@ export const ThumbnailStyleContainer = styled.div<StyleProp>`
     text-align: center;
     line-height: 1.4;
     font-weight: 500;
-    font-size: 13px;
+    font-size: 14px;
+    color: #fff;
   }
 `;

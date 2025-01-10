@@ -71,6 +71,7 @@ export const GlobalStyle = createGlobalStyle`
     min-height: 100dvh;
     /* background-color: var(--bg-color); */
     background: url("/assets/images/bg-1.jpg") no-repeat center center;
+    /* background: url("/assets/images/bg.jpg") no-repeat center center; */
     background-size: cover;
   }
 
