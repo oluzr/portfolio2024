@@ -2,10 +2,11 @@ import CursorAnimation from "components/common/Cursor/Cursor";
 import * as S from "./style";
 import ThumbnailCard from "components/common/ThumbnailCard/ThumbnailCard";
 import AppIcon from "components/common/AppIcon/AppIcon";
+import ContactCard from "./_components/ContactCard/ContactCard";
 const Main = () => {
   return (
     <S.MainStyleContainer>
-      <ThumbnailCard title="contact" imgSrc="/assets/images/bg-ver2.jpg" />
+      <ContactCard />
       <div className="app-icons-wrapper">
         <div className="app-icons">
           <ThumbnailCard

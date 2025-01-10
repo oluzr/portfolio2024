@@ -7,7 +7,7 @@ const ContactCard = () => {
   return (
     <S.ContactCardStyleContainer>
       <div className="thumb">
-        <Image src="/assets/images/bg-ver2.jpg" />
+        <Image src="/assets/images/bg-white.jpg" />
         <h5 className="main-tit">Contact</h5>
         <p className="sub-tit">olu-zr@naver.com</p>
         <ul>
