@@ -555,6 +555,14 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
       "✔️ 프론트 개발 담당",
       "✔️ 기여도 50% (프론트 2인 진행)",
     ],
+    skillset: [
+      "react",
+      "typescript",
+      "react-query",
+      "axios",
+      "recoil",
+      "styled-components",
+    ],
   },
   {
     title: "옵티마 RX",
@@ -572,6 +580,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
       "✔️ SEO 최적화 작업",
       "✔️ 전체 페이지 실행 코드 분석 및 정리",
     ],
+    skillset: ["react", "asp", "javascript", "ajax", "axios", "recoil"],
   },
   {
     title: "옵티마 가맹 웹사이트 리뉴얼 (pc/mo)",
@@ -591,6 +600,16 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
       "🗣️ 옵티마 사이트 리뉴얼을 통해 브랜드의 신뢰성과 전문성을 대폭 강화했습니다.",
       "🗣️ 사용자 중심의 직관적이고 세련된 인터페이스를 구현함으로써 모든 디바이스에서 일관되고 매끄러운 사용자 경험을 위해 노력하였습니다 💪🏻",
     ],
+    skillset: [
+      'react',
+      'axios',
+      'typescript',
+      'react-hook-form',
+      'kakao maps',
+      'recoil',
+      'sass',
+      'vite',
+    ]
   },
   {
     title: "LSP 자사 홈페이지 리뉴얼 (pc/mo)",
@@ -608,6 +627,14 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     ],
     feedback: [
       "🗣️ 자사 사이트 리뉴얼을 통해 다양한 애니메이션과 일관되고 매끄러운 사용자 경험을 고려한 인터페이스를 구현하며 브랜드의 메시지를 명확하게 전달하기 위해 노력하였습니다",
+    ],
+    skillset: [
+      "react",
+      "zustand",
+      "axios",
+      "kakao maps",
+      "sass",
+      "typescript",
     ],
   },
 ];

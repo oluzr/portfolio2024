@@ -5,6 +5,7 @@ import { PRJ_CARDS_DATA, SIDEPRJ_CARDS_DATE } from "api/data";
 import { useEffect, useState } from "react";
 import { PrjCardProp } from "components/common/PrjCard/interface";
 import Feedback from "components/common/Feedback/Feedback";
+import SkillSet from "components/common/SkillSet/SkillSet";
 const PrjIntro = ({ value }: PrjIntroProp) => {
   const [projectData, setProjectData] = useState<PrjCardProp | null>(null);
   useEffect(() => {
@@ -37,6 +38,11 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
       {projectData && (
         <PrjCard showPath={false} showSubTitle={true} prjItem={projectData} />
       )}
+       {projectData?.skillset && (
+        <div className="skillset-wrap">
+          <SkillSet skills={projectData.skillset} />
+        </div>
+      )}
       {(projectData?.keywords || projectData?.feedback) && (
         <div className="info-wrap">
           <div className="inner">
@@ -49,6 +55,7 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
           </div>
         </div>
       )}
+     
     </S.PrjIntroStyleContainer>
   );
 };

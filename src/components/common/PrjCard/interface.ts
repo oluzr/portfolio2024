@@ -10,6 +10,7 @@ export interface PrjCardProp {
   path?: string;
   feedback?: string | string[];
   keywords?: string | string[];
+  skillset?: string[]
 }
 
 export interface PrjCardStyleProp {

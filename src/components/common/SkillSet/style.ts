@@ -10,8 +10,8 @@ export const SkillSetStyleContainer = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      background-color: #eee;
-      border-radius: 4px;
+      background-color: #33333383;
+      border-radius: 6px;
       padding: 4px 7px;
       span {
       }
@@ -23,6 +23,7 @@ export const SkillSpanStyleContainer = styled.span<StyleProp>`
   font-size: 12px;
   white-space: pre-line;
   line-height: 1.4;
+  transition: color .2s;
   ${(prop) => prop.$fontColor && css`
     color: ${prop.$fontColor};
   `}

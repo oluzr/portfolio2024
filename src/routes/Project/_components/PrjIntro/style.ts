@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { PrjIntroStyleProp } from "./interface";
 export const PrjIntroStyleContainer = styled.div<PrjIntroStyleProp>`
   margin-bottom: 20px;
+  .skillset-wrap{
+    margin-top: 20px;
+  }
   .info-wrap {
     margin-top: 20px;
     .inner {
