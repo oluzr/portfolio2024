@@ -27,8 +27,9 @@ export const LayoutStyleContainer = styled.main`
     width: 100%;
     padding: 20px 40px 60px;
     overflow-y: auto;
+    height: 100%;
     ${media.phone`
-      padding: 70px 14px 0;
+      padding: 70px 14px 40px;
     `}
   }
 `;
