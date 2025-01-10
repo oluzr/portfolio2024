@@ -5,6 +5,8 @@ import Main from "routes/Main/Main";
 import SidePrj from "routes/SidePrj/SidePrj";
 import Project from "routes/Project/Project";
 import Works from "routes/Works/Works";
+import Intro from "routes/Intro/Intro";
+import Archive from "routes/Archive/Archive";
 
 const App = () => {
   const location = useLocation();
@@ -16,6 +18,8 @@ const App = () => {
           <Route path="/works/:value" element={<Project />} />
           <Route path="/works" element={<Works />} />
           <Route path="/sideProjects" element={<SidePrj />} />
+          <Route path="/intro" element={<Intro />} />
+          <Route path="/archive" element={<Archive />} />
         </Routes>
       </RouterTransition>
     </Layout>

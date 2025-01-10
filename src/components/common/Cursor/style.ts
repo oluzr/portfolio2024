@@ -2,7 +2,7 @@ import styled from "styled-components";
 export const CursorStyleContainer = styled.svg`
   z-index: 1000;
   *{
-    transition: all .1s;
+    transition: fill .1s;
   }
   &:is(main:hover ~ &) {
     polyline {
