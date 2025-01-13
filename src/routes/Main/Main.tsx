@@ -3,10 +3,12 @@ import * as S from "./style";
 import ThumbnailCard from "components/common/ThumbnailCard/ThumbnailCard";
 import AppIcon from "components/common/AppIcon/AppIcon";
 import ContactCard from "./_components/ContactCard/ContactCard";
+import EmojiWrap from "components/common/EmojiWrap/EmojiWrap";
 const Main = () => {
   return (
     <S.MainStyleContainer>
-      <ContactCard />
+      {/* <ContactCard /> */}
+      <EmojiWrap />
       <div className="app-icons-wrapper">
         <div className="app-icons">
           <ThumbnailCard

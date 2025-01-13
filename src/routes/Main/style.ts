@@ -2,13 +2,15 @@ import { media } from "assets/media";
 import styled from "styled-components";
 export const MainStyleContainer = styled.section`
   height: 100%;
-  padding: 0 70px;
+  padding: 30px 80px !important;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 50px;
   ${media.phone`
-       padding-left: 20px !important;
-       padding-right: 20px !important;
+    padding:80px 20px !important;
+  `}
+  ${media.tablet`
+    padding:20px 40px !important;
   `}
   .app-icons-wrapper {
     display: flex;

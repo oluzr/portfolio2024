@@ -5,9 +5,11 @@ import { constants } from "constants";
 import useIsMobile from "hooks/useIsMobile";
 import BackBtn from "components/common/BackBtn/BackBtn";
 import Hamberger from "components/common/Hamberger/Hamberger";
+import { useLocation } from "react-router-dom";
 
 const Header = () => {
   const isItMobile = useIsMobile();
+  const location = useLocation();
   return (
     <S.HeaderStyleContainer>
       {!isItMobile ? (
@@ -55,7 +57,7 @@ const Header = () => {
         </>
       ) : (
         <>
-          <BackBtn />
+          {location.pathname !== "/" ? <BackBtn /> : <div></div>}
           <Hamberger />
         </>
       )}

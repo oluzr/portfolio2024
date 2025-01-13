@@ -5,8 +5,8 @@ const SkillSet = ({ skills }: Prop) => {
   return (
     <SkillSetStyleContainer>
       <ul>
-        {skills.map((skill) => (
-          <li>
+        {skills.map((skill,idx) => (
+          <li key={idx}>
             <SkillSpan skill={skill} />
           </li>
         ))}
