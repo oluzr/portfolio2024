@@ -12,7 +12,7 @@ const Project = () => {
   const isItMobile = useIsMobile();
   useEffect(() => {
     if (!value) {
-      navigate("/projects");
+      navigate("/works");
     }
     console.log(value);
   }, []);

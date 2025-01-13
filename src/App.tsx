@@ -15,9 +15,9 @@ const App = () => {
       <RouterTransition location={location}>
         <Routes location={location}>
           <Route path="/" element={<Main />} />
-          <Route path="/works/:value" element={<Project />} />
+          <Route path="/work/:value" element={<Project />} />
           <Route path="/works" element={<Works />} />
-          <Route path="/sideProjects" element={<SidePrj />} />
+          {/* <Route path="/sideProjects" element={<SidePrj />} /> */}
           <Route path="/intro" element={<Intro />} />
           <Route path="/archive" element={<Archive />} />
         </Routes>

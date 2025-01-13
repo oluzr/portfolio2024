@@ -38,7 +38,7 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
       {projectData && (
         <PrjCard showPath={false} showSubTitle={true} prjItem={projectData} />
       )}
-       {projectData?.skillset && (
+      {projectData?.skillset && (
         <div className="skillset-wrap">
           <SkillSet skills={projectData.skillset} />
         </div>
@@ -55,7 +55,6 @@ const PrjIntro = ({ value }: PrjIntroProp) => {
           </div>
         </div>
       )}
-     
     </S.PrjIntroStyleContainer>
   );
 };

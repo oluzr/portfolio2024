@@ -17,8 +17,10 @@ const LocationInfo = () => {
             <Link to={"/"}>
               <IoMdHome />
             </Link>
-            {paths.map((path,idx) => (
-              <Link to={path} key={idx}>{path}</Link>
+            {paths.map((path, idx) => (
+              <Link to={path === "work" ? "works" : path} key={idx}>
+                {path}
+              </Link>
             ))}
           </>
         )}

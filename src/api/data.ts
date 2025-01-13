@@ -1,6 +1,7 @@
 import { PrjCardProp } from "components/common/PrjCard/interface";
-import { ProjectItemType } from "types/app/type";
+import { ProjectItemType, TimelineType } from "types/app/type";
 
+// projects
 export const OPTIMA_RX_DATA: ProjectItemType = [
   {
     title: "ai 소분판매 관련 작업한 내용에 대해 설명해줘",
@@ -548,7 +549,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     subTitle: "옵티마 약사몰 모바일 앱 (react 기반 웹 뷰)",
     contribution: 60,
     participants: ["front", "front", "ios", "aos"],
-    path: "/works/optimaApp",
+    path: "/work/optimaApp",
     keywords: [
       "📅 2024.07~2024.10",
       "✔️ React 기반 웹뷰 개발",
@@ -573,7 +574,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     subTitle: "기존 ASP 사이트 유지보수 및 신규 리액트 페이지 개발",
     contribution: 60,
     participants: ["front"],
-    path: "/works/optimaRx",
+    path: "/work/optimaRx",
     keywords: [
       "기존 ASP 사이트 유지보수 및 신규 리액트 페이지 개발",
       "✔️ AI 소분판매 페이지 리액트 개발",
@@ -590,7 +591,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     subTitle: "옵티마 가맹 웹 사이트 리뉴얼",
     contribution: 100,
     participants: ["front", "back"],
-    path: "/works/optimacare",
+    path: "/work/optimacare",
     keywords: [
       "📅 2024.07~2024.07",
       "✔️ 프론트 개발 전담",
@@ -601,15 +602,15 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
       "🗣️ 사용자 중심의 직관적이고 세련된 인터페이스를 구현함으로써 모든 디바이스에서 일관되고 매끄러운 사용자 경험을 위해 노력하였습니다 💪🏻",
     ],
     skillset: [
-      'react',
-      'axios',
-      'typescript',
-      'react-hook-form',
-      'kakao maps',
-      'recoil',
-      'sass',
-      'vite',
-    ]
+      "react",
+      "axios",
+      "typescript",
+      "react-hook-form",
+      "kakao maps",
+      "recoil",
+      "sass",
+      "vite",
+    ],
   },
   {
     title: "LSP 자사 홈페이지 리뉴얼 (pc/mo)",
@@ -619,7 +620,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     subTitle: "LSP 자사 웹 사이트 리뉴얼",
     contribution: 100,
     participants: ["front", "back"],
-    path: "/works/lsp",
+    path: "/work/lsp",
     keywords: [
       "📅 2024.06~2024.07",
       "✔️ 프론트 개발 전담",
@@ -628,14 +629,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     feedback: [
       "🗣️ 자사 사이트 리뉴얼을 통해 다양한 애니메이션과 일관되고 매끄러운 사용자 경험을 고려한 인터페이스를 구현하며 브랜드의 메시지를 명확하게 전달하기 위해 노력하였습니다",
     ],
-    skillset: [
-      "react",
-      "zustand",
-      "axios",
-      "kakao maps",
-      "sass",
-      "typescript",
-    ],
+    skillset: ["react", "zustand", "axios", "kakao maps", "sass", "typescript"],
   },
 ];
 export const SIDEPRJ_CARDS_DATE: PrjCardProp[] = [
@@ -648,7 +642,7 @@ export const SIDEPRJ_CARDS_DATE: PrjCardProp[] = [
       "블로그 서비스 앱으로 쉽고 간편한 블로그 개설을 통해 유저 간 팔로우, 좋아요, 댓글을 주고받을 수 있습니다.",
     contribution: 100,
     participants: ["front", "back"],
-    path: "/works/som",
+    path: "/work/som",
     keywords: [
       "📅 2024.01~2024.02",
       "✔️ 프론트 개발 전담",
@@ -669,7 +663,7 @@ export const SIDEPRJ_CARDS_DATE: PrjCardProp[] = [
     subTitle: `각자의 운동 기록 을 공유할 수 있고, 같이 운동할 사람들을 모집할 수 있습니다.`,
     contribution: 99,
     participants: ["front", "back", "back", "back"],
-    path: "/works/usports",
+    path: "/work/usports",
     keywords: [
       "📅 2023.11~2024.01",
       "✔️ 프론트 개발 전담",
@@ -681,6 +675,54 @@ export const SIDEPRJ_CARDS_DATE: PrjCardProp[] = [
        🗣️ 프로젝트를 하면서 느꼈던 것은 프론트엔드와 백엔드 모두 각자 포지션에서 역할의 최대치를 수행했을 때 그만큼 협업 과정이 수월해지고 프로젝트 완성도가 올라간다는 것이다. 물론 우리 모두 아직은 아마추어들이지만, 팀원들이 전부 열정적이고 적극적으로 임하는 것을 보고 이 프로젝트에서 정말 많은 동기부여를 얻고 가는 것 같다. 
  프론트엔드 인원 관련 이슈로 인해 프로젝트 중후반부터는 혼자 프론트를 전담하게 됐는데, 나머지 팀원분들이 그런 상황들을 많이 고려해 최대한 배려를 해주셔서 감사했다. 비록 개발 작업 진도가 늦어졌지만 조급한 마음에 엉성하게 짜맞춰 끝내는 것 보단, 모두가 차분하게 프로젝트에 집중하면서 완성도를 높이기 위해 노력하는 것이 느껴졌다. 
  데모데이 이후 추가로 2주간 모여서 못다한 기능 개발을 진행하게 됐는데, 지금껏 한 번도 다뤄보지 않았던 기능들을 배워 볼 생각에 설렌다. 하나도 힘들지 않았다면 거짓말이겠지만, 그걸 상쇄할 만큼 정말 뿌듯하고 즐거운 프로젝트였다! `,
+    ],
+  },
+];
+
+// introduction
+
+export const TIMELINE_DATA: TimelineType[] = [
+  {
+    year: 2021,
+    contents: [
+      { date: "2021/12", content: "웹디자인기능사 취득" },
+      {
+        date: "2021/06~2021/11",
+        content:
+          " 하이미디어 (스마트웹&콘텐츠개발) UI/UX 웹디자인&웹퍼블리셔 과정 수료",
+      },
+    ],
+  },
+  {
+    year: 2022,
+    contents: [
+      {
+        date: "2022.01~",
+        content: "(주)커넥트웨이브 / 웹퍼블리셔",
+      },
+    ],
+  },
+  {
+    year: 2023,
+    contents: [
+      { date: "~2023.05", content: "(주)커넥트웨이브 / 웹퍼블리셔" },
+      {
+        date: "2023/08~2023/10",
+        content: "모던 자바스크립트 Deep Dive 북스터디",
+      },
+      {
+        date: "2023/06~2024/01",
+        content: "제로베이스 프론트엔드 스쿨 16기 수료",
+      },
+    ],
+  },
+  {
+    year: 2024,
+    contents: [
+      {
+        date: "2024.04~2024.12",
+        content: "(주)라이프스타일프로젝트 / 프론트엔드 개발",
+      },
     ],
   },
 ];

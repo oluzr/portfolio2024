@@ -1,34 +1,34 @@
 export const constants = {
   APPICONS_1: [
     {
-      imgUrl: "/assets/images/fish1.png",
+      imgUrl: "/assets/images/appicon11.png",
       iconName: "In LSP",
       linkTo: "/works",
     },
     {
-      imgUrl: "/assets/images/fish2.png",
+      imgUrl: "/assets/images/appicon12.png",
       iconName: "약사몰 app",
-      linkTo: "/works/optimaApp",
+      linkTo: "/work/optimaApp",
     },
     {
-      imgUrl: "/assets/images/fish3.png",
+      imgUrl: "/assets/images/appicon10.png",
       iconName: "옵티마 케어",
-      linkTo: "/works/optimacare",
+      linkTo: "/work/optimacare",
     },
     {
-      imgUrl: "/assets/images/fish4.png",
+      imgUrl: "/assets/images/appicon13.png",
       iconName: "옵티마 rx",
-      linkTo: "/works/optimaRx",
+      linkTo: "/work/optimaRx",
     },
   ],
   APPICONS_2: [
     {
-      imgUrl: "/assets/images/avatar3.png",
+      imgUrl: "/assets/images/appicon1.png",
       iconName: "introduce",
       linkTo: "/intro",
     },
     {
-      imgUrl: "/assets/images/avatar4.png",
+      imgUrl: "/assets/images/appicon9.png",
       iconName: "archive",
       linkTo: "/archive",
     },
@@ -44,20 +44,20 @@ export const constants = {
     },
   ],
   APPICONS_3: [
-    {
-      imgUrl: "/assets/images/avatar3.png",
+    /*   {
+      imgUrl: "/assets/images/appicon6.png",
       iconName: "전체 보기",
       linkTo: "/sideProjects",
-    },
+    }, */
     {
-      imgUrl: "/assets/images/avatar3.png",
+      imgUrl: "/assets/images/appicon7.png",
       iconName: "SOM",
-      linkTo: "/works/som",
+      linkTo: "/work/som",
     },
     {
-      imgUrl: "/assets/images/avatar3.png",
+      imgUrl: "/assets/images/appicon8.png",
       iconName: "USPORTS",
-      linkTo: "/works/usports",
+      linkTo: "/work/usports",
     },
   ],
   ASIDE_MEMU: [
@@ -80,36 +80,36 @@ export const constants = {
         },
         {
           title: "optima app",
-          link: "/works/optimaApp",
+          link: "/work/optimaApp",
         },
         {
           title: "optima rx",
-          link: "/works/optimaRx",
+          link: "/work/optimaRx",
         },
         {
           title: "optima care",
-          link: "/works/optimacare",
+          link: "/work/optimacare",
         },
         {
           title: "lsp web site",
-          link: "/works/lsp",
+          link: "/work/lsp",
         },
       ],
     },
     {
       title: "side projects",
       subMenu: [
-        {
+        /*         {
           title: "side projects",
           link: "/sideProjects",
-        },
+        }, */
         {
           title: "som",
-          link: "/works/som",
+          link: "/work/som",
         },
         {
           title: "usports",
-          link: "/works/usports",
+          link: "/work/usports",
         },
       ],
     },

@@ -14,7 +14,7 @@ export const LayoutStyleContainer = styled.main`
   background-color: #03173440;
   backdrop-filter: blur(14px);
   overflow: hidden;
-  box-shadow: 0 0 100px -1px #ffffff14;
+  box-shadow: 0 40px 140px -1px rgba(255, 255, 255, 0.09);
   ${media.phone`
     width:100%;
     border-radius:0;

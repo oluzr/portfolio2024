@@ -15,7 +15,7 @@ const Header = () => {
           <AppIcon
             iconName="main"
             linkTo="/"
-            imgUrl="/assets/images/fish1.png"
+            imgUrl="/assets/images/appicon1.png"
             style={{ top: "10%", right: "10%", position: "fixed" }}
           />
           <AppIcons

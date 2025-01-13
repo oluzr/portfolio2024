@@ -1,7 +1,7 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import tsconfigPaths from "vite-tsconfig-paths";
-import reactRefresh from "@vitejs/plugin-react-refresh";
+// import reactRefresh from "@vitejs/plugin-react-refresh";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
@@ -9,7 +9,7 @@ export default defineConfig({
       jsxRuntime: "automatic",
     }),
     tsconfigPaths(),
-    reactRefresh(),
+    // reactRefresh(),
   ],
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
