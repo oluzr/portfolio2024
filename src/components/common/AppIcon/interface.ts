@@ -3,6 +3,7 @@ export interface AppIconProp {
   iconName: string;
   linkTo?: string;
   style?: React.CSSProperties;
+  notiNum?:number
 }
 export interface AppIconStyleProp {
   style?: React.CSSProperties;

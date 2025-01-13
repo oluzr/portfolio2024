@@ -4,6 +4,7 @@ export type AppIconsProp = {
   icons: AppIconProp[];
   title: string;
   style: React.CSSProperties;
+  notiNum?:number
 };
 export interface AppIconsStyleProp {
   $title: string;

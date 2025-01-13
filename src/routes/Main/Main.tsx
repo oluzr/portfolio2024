@@ -11,12 +11,12 @@ const Main = () => {
       <EmojiWrap />
       <div className="app-icons-wrapper">
         <div className="app-icons">
-          
           <ThumbnailCard
             title="works"
             imgSrc="/assets/images/appicon9.png"
             size="square"
             linkTo="/works"
+            notiNum={6}
           />
           <ThumbnailCard
             title="intro"

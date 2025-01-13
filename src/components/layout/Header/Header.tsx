@@ -23,6 +23,7 @@ const Header = () => {
           />
           <AppIcon
             iconName="works"
+            notiNum={6}
             linkTo="/works"
             imgUrl="/assets/images/appicon9.png"
             style={{ top: "calc(10% + 150px)", right: "6%", position: "fixed" }}
@@ -30,6 +31,7 @@ const Header = () => {
           <AppIcons
             title="In LSP"
             icons={constants.APPICONS_1}
+            notiNum={4}
             style={{
               top: "30%",
               left: "5%",
@@ -40,6 +42,7 @@ const Header = () => {
           <AppIcons
             title="oluzr"
             icons={constants.APPICONS_2}
+            
             style={{
               bottom: "30%",
               right: "5%",
@@ -48,6 +51,7 @@ const Header = () => {
           />
           <AppIcons
             title="Side Project"
+            notiNum={3}
             icons={constants.APPICONS_3}
             style={{
               bottom: "30%",

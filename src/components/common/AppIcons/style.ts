@@ -7,9 +7,12 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
   justify-content: center;
   gap: 10px;
   z-index: 2;
-
+ 
   &:has(.clicked) {
     z-index: 4;
+    span{
+      display: none;
+    }
   }
   p.title {
     color: #fff;

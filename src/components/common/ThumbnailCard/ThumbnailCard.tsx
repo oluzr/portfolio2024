@@ -2,7 +2,14 @@ import { Link } from "react-router-dom";
 import { Prop } from "./interface";
 import * as S from "./style";
 import Image from "../Image/Image";
-const ThumbnailCard = ({ title, imgSrc, linkTo, size = "full" }: Prop) => {
+import NumberBadge from "../NumberBadge/NumberBadge";
+const ThumbnailCard = ({
+  title,
+  imgSrc,
+  linkTo,
+  size = "full",
+  notiNum,
+}: Prop) => {
   return (
     <S.ThumbnailStyleContainer $size={size}>
       {linkTo ? (
@@ -13,6 +20,8 @@ const ThumbnailCard = ({ title, imgSrc, linkTo, size = "full" }: Prop) => {
         <Image src={imgSrc} />
       )}
       <p>{title}</p>
+
+      {notiNum && <NumberBadge num={notiNum} />}
     </S.ThumbnailStyleContainer>
   );
 };

@@ -3,7 +3,8 @@ import AppIcon from "../AppIcon/AppIcon";
 import { AppIconsProp } from "./interface";
 import * as S from "./style";
 import { useAppIconsStore, useModalBGStore } from "store/app";
-const AppIcons = ({ icons, title, style }: AppIconsProp) => {
+import NumberBadge from "../NumberBadge/NumberBadge";
+const AppIcons = ({ icons, title, style,notiNum }: AppIconsProp) => {
   const { modalBGShowState, showModalBG } = useModalBGStore((state) => state);
   const [thisShowState, setShowState] = useState(false);
   const { openAppIcons, isOpened } = useAppIconsStore((state) => state);
@@ -39,6 +40,7 @@ const AppIcons = ({ icons, title, style }: AppIconsProp) => {
         </ul>
       </div>
       <p className="title">{title}</p>
+      {notiNum && <NumberBadge num={notiNum} />}
     </S.AppIconsStyleContainer>
   );
 };

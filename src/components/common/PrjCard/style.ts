@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { PrjCardStyleProp } from "./interface";
+import { media } from "assets/media";
 export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
   margin-top: 14px;
   .inner {
@@ -27,8 +28,11 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
         font-size: 27px;
         line-height: 1.2;
         font-weight: 400;
+        ${media.phone`
+          font-size:20px;
+          `}
       }
-      p{
+      p {
         margin-top: 14px;
         font-size: 14px;
         white-space: pre-line;

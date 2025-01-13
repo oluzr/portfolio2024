@@ -10,7 +10,7 @@ export const ButtonStyleContainer = styled.div<ButtonStyleProp>`
     justify-content: center;
     cursor: pointer;
     border: none;
-    font-size: 1em;
+    font-size: 14px;
     transition: all 0.1s;
     font-weight: 400;
     border-radius: 7px;

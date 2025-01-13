@@ -8,6 +8,7 @@ export const ThumbnailStyleContainer = styled.div<StyleProp>`
   width: 100%;
   align-items: center;
   justify-content: center;
+  position: relative;
   img {
     display: flex;
     width: 100%;
@@ -46,4 +47,5 @@ export const ThumbnailStyleContainer = styled.div<StyleProp>`
     ${media.phone`
     font-size:13px;`}
   }
+  
 `;

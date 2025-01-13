@@ -3,7 +3,8 @@ import Image from "../Image/Image";
 import { AppIconProp } from "./interface";
 import * as S from "./style";
 import { media } from "assets/media";
-const AppIcon = ({ iconName, imgUrl, linkTo, style }: AppIconProp) => {
+import NumberBadge from "../NumberBadge/NumberBadge";
+const AppIcon = ({ iconName, imgUrl, linkTo, style, notiNum }: AppIconProp) => {
   return (
     <S.AppIconStyleContainer style={style}>
       <div className="app-icon-img">
@@ -16,6 +17,7 @@ const AppIcon = ({ iconName, imgUrl, linkTo, style }: AppIconProp) => {
         )}
       </div>
       <p>{iconName}</p>
+      {notiNum && <NumberBadge num={notiNum} />}
     </S.AppIconStyleContainer>
   );
 };
