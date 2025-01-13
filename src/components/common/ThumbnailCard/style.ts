@@ -4,7 +4,7 @@ import { media } from "assets/media";
 export const ThumbnailStyleContainer = styled.div<StyleProp>`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 11px;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -39,5 +39,11 @@ export const ThumbnailStyleContainer = styled.div<StyleProp>`
     font-weight: 500;
     font-size: 14px;
     color: #fff;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    ${media.phone`
+    font-size:13px;`}
   }
 `;

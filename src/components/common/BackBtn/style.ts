@@ -7,8 +7,8 @@ export const BackBtnStyleContainer = styled.div`
     width: 40px;
     height: 40px;
     ${media.phone`
-      width:30px;
-      height:30px;
+      width:26px;
+      height:26px;
     `}
   }
 `;

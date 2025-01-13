@@ -25,6 +25,7 @@ export const ContentCardStyleContainer = styled.div`
       font-size: 50px;
       font-weight: 500;
       ${media.phone`
+        position: unset;
         top:10px;
         z-index:1;
       `}
