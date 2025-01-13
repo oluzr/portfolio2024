@@ -8,11 +8,10 @@ export const PostingStyleContainer = styled.div`
     /* border: 1px solid red; */
     border-radius: 15px;
     border-right: 20px solid #0b1c30cf;
-    max-width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 30px 18px 30px 90px;
+    padding: 20px 18px 20px 30px;
     position: relative;
     background-color: #11384c8f;
     overflow: hidden;
@@ -26,14 +25,6 @@ export const PostingStyleContainer = styled.div`
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    img {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -17px;
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-    }
+    
   }
 `;

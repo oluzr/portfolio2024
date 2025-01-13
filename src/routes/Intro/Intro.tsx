@@ -2,6 +2,7 @@ import ThumbnailCard from "components/common/ThumbnailCard/ThumbnailCard";
 import * as S from "./style";
 import { Link } from "react-router-dom";
 import Timeline from "./_components/Timeline/Timeline";
+import Profile from "./_components/Profile/Profile";
 const Intro = () => {
   /*
     내 소개
@@ -10,6 +11,7 @@ const Intro = () => {
   */
   return (
     <S.IntroStyleContainer>
+       <Profile />
       <div className="navigate-section">
         <ul>
           <li>
@@ -24,7 +26,9 @@ const Intro = () => {
         </ul>
       </div>
       <div className="contents-section">
-        <div id="about"></div>
+        <div id="about">
+         
+        </div>
         <div id="timeline">
           <Timeline />
         </div>

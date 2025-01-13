@@ -16,7 +16,6 @@ const PostingCard = ({ link, title }: PostingCardProp) => {
   return (
     <S.PostingStyleContainer>
       <Link to={link}>
-        <Image src="/assets/images/avatar1.png" />
         {title ? (
           <p>{extractTitleFromURL(title)}</p>
         ) : (

@@ -19,7 +19,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
     `}
 	.chat-bubble-wrap {
     position: relative;
-    padding: 10px 18px 10px;
+    padding: 13px 18px 13px;
     border-radius: 13px;
     font-weight: 400;
     font-size: 14px;
