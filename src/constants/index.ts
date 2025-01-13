@@ -1,7 +1,7 @@
 export const constants = {
   APPICONS_1: [
     {
-      imgUrl: "/assets/images/appicon12.png",
+      imgUrl: "/assets/images/appicon14.png",
       iconName: "optima app",
       linkTo: "/work/optimaApp",
     },
@@ -33,12 +33,12 @@ export const constants = {
       linkTo: "/archive",
     },
     {
-      imgUrl: "/assets/images/avatar1.png",
+      imgUrl: "/assets/images/appicon17.png",
       iconName: "⤷github",
       linkTo: "https://github.com/oluzr",
     },
     {
-      imgUrl: "/assets/images/avatar2.png",
+      imgUrl: "/assets/images/appicon18.png",
       iconName: "⤷velog",
       linkTo: "https://github.com/oluzr",
     },
@@ -50,17 +50,17 @@ export const constants = {
       linkTo: "/sideProjects",
     }, */
     {
-      imgUrl: "/assets/images/appicon7.png",
+      imgUrl: "/assets/images/appicon15.png",
       iconName: "SOM",
       linkTo: "/work/som",
     },
     {
-      imgUrl: "/assets/images/appicon8.png",
+      imgUrl: "/assets/images/appicon16.png",
       iconName: "USPORTS",
       linkTo: "/work/usports",
     },
     {
-      imgUrl: "/assets/images/appicon8.png",
+      imgUrl: "/assets/images/appicon19.png",
       iconName: "tomatter",
       linkTo: "/work/tomatter",
     },
