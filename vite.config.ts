@@ -11,6 +11,9 @@ export default defineConfig({
     tsconfigPaths(),
     // reactRefresh(),
   ],
+  server: {
+    host: true,
+  },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"],
     alias: {

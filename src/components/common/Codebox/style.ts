@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { CodeboxStyleProp } from "./interface";
+import { media } from "assets/media";
 export const CodeboxStyleContainer = styled.div<CodeboxStyleProp>`
   display: flex;
   width: 100%;
@@ -12,6 +13,8 @@ export const CodeboxStyleContainer = styled.div<CodeboxStyleProp>`
       align-items: flex-end;
       .inner {
         width: 64%;
+        ${media.phone`
+    width:100%`}
       }
     `}
   .inner {
@@ -24,6 +27,9 @@ export const CodeboxStyleContainer = styled.div<CodeboxStyleProp>`
       color: #fff;
       white-space: pre-line;
       line-height: 1.4;
+      width: 100%;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
 `;

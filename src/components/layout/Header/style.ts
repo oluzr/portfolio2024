@@ -11,7 +11,18 @@ export const HeaderStyleContainer = styled.header`
     top: 0;
     width: 100%;
     z-index:10;
-    justify-content:space-between
+    justify-content:space-between;
+    .top-msg{
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%,-50%);
+      a{
+        color: #e5e5ea;
+        font-weight: 300;
+        font-size: 13px;
+        font-weight:500;
+      }
+    }
   `}
-  
 `;

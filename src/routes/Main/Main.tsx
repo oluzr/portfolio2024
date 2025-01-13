@@ -11,18 +11,20 @@ const Main = () => {
       <EmojiWrap />
       <div className="app-icons-wrapper">
         <div className="app-icons">
-          <ThumbnailCard
-            title="intro"
-            imgSrc="/assets/images/selfi1.jpeg"
-            size="square"
-            linkTo="/intro"
-          />
+          
           <ThumbnailCard
             title="works"
             imgSrc="/assets/images/appicon9.png"
             size="square"
             linkTo="/works"
           />
+          <ThumbnailCard
+            title="intro"
+            imgSrc="/assets/images/appicon4.png"
+            size="square"
+            linkTo="/intro"
+          />
+
           <ThumbnailCard
             title="archive"
             imgSrc="/assets/images/appicon5.png"

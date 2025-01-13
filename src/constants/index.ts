@@ -23,7 +23,7 @@ export const constants = {
   ],
   APPICONS_2: [
     {
-      imgUrl: "/assets/images/selfi1.jpeg",
+      imgUrl: "/assets/images/appicon4.png",
       iconName: "intro",
       linkTo: "/intro",
     },

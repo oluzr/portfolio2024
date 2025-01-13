@@ -504,16 +504,15 @@ export async function middleware(request: NextRequest) {
       },
       "webSocketFactory 을 이용해 웹소켓이 지원되지 않는 환경에서는 xhr 폴링 메커니즘 제공",
       {
-        code: `
-        const client = new StompJs.Client({
-        webSocketFactory: () =>
-          new SockJS('https://3.39.34.245.nip.io/ws/chat'),
-        connectHeaders: {
-          Authorization: Bearer userToken,
-        },
-        reconnectDelay: 50000,
-        heartbeatIncoming: 10000,
-        heartbeatOutgoing: 10000,
+        code: `const client = new StompJs.Client({
+        ㅤwebSocketFactory: () =>
+        ㅤnew SockJS('https://3.39.34.245.nip.io/ws/chat'),
+        ㅤㅤconnectHeaders: {
+        ㅤㅤAuthorization: Bearer userToken,
+        ㅤ},
+        ㅤreconnectDelay: 50000,
+        ㅤheartbeatIncoming: 10000,
+        ㅤheartbeatOutgoing: 10000,
       })
         `,
       },

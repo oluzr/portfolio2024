@@ -5,7 +5,8 @@ import { constants } from "constants";
 import useIsMobile from "hooks/useIsMobile";
 import BackBtn from "components/common/BackBtn/BackBtn";
 import Hamberger from "components/common/Hamberger/Hamberger";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import TopMsg from "../TopMsg/TopMsg";
 
 const Header = () => {
   const isItMobile = useIsMobile();
@@ -58,6 +59,9 @@ const Header = () => {
       ) : (
         <>
           {location.pathname !== "/" ? <BackBtn /> : <div></div>}
+          <div className="top-msg">
+            <Link to={"/"}>workroom</Link>
+          </div>
           <Hamberger />
         </>
       )}
