@@ -10,41 +10,42 @@ const Main = () => {
       <div className="app-icons-wrapper">
         <div className="app-icons">
           <ThumbnailCard
-            title="contact"
-            imgSrc="/assets/images/ocean.jpeg"
+            title="works"
+            imgSrc="/assets/images/appicon9.png"
             size="square"
+            linkTo="/works"
           />
           <ThumbnailCard
-            title="contact"
-            imgSrc="/assets/images/ocean.jpeg"
+            title="optima app"
+            imgSrc="/assets/images/appicon12.png"
             size="square"
+            linkTo="/work/optimaApp"
           />
           <ThumbnailCard
-            title="contact"
-            imgSrc="/assets/images/ocean.jpeg"
+            title="optima care"
+            imgSrc="/assets/images/appicon10.png"
             size="square"
+            linkTo="/work/optimacare"
           />
           <ThumbnailCard
-            title="contact"
-            imgSrc="/assets/images/ocean.jpeg"
+            title="som"
+            imgSrc="/assets/images/appicon7.png"
             size="square"
+            linkTo="/work/som"
           />
         </div>
         <div className="app-icons">
           <ThumbnailCard
-            title="contact"
+            title="intro"
             imgSrc="/assets/images/selfi1.jpeg"
             size="square"
+            linkTo="/intro"
           />
           <ThumbnailCard
-            title="contact"
-            imgSrc="/assets/images/selfi1.jpeg"
+            title="archive"
+            imgSrc="/assets/images/appicon5.png"
             size="square"
-          />
-          <ThumbnailCard
-            title="contact"
-            imgSrc="/assets/images/selfi1.jpeg"
-            size="square"
+            linkTo="/intro"
           />
         </div>
       </div>

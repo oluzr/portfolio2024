@@ -16,14 +16,20 @@ const Header = () => {
             iconName="main"
             linkTo="/"
             imgUrl="/assets/images/appicon1.png"
-            style={{ top: "10%", right: "10%", position: "fixed" }}
+            style={{ top: "10%", right: "6%", position: "fixed" }}
+          />
+          <AppIcon
+            iconName="works"
+            linkTo="/works"
+            imgUrl="/assets/images/appicon9.png"
+            style={{ top: "calc(10% + 150px)", right: "6%", position: "fixed" }}
           />
           <AppIcons
-            title="회사 프로젝트"
+            title="In LSP"
             icons={constants.APPICONS_1}
             style={{
               top: "30%",
-              left: "4.5%",
+              left: "5%",
               position: "fixed",
               transformOrigin: "left bottom",
             }}
@@ -38,11 +44,11 @@ const Header = () => {
             }}
           />
           <AppIcons
-            title="사이드 프로젝트"
+            title="Side Project"
             icons={constants.APPICONS_3}
             style={{
               bottom: "30%",
-              left: "4.5%",
+              left: "5%",
               position: "fixed",
             }}
           />
