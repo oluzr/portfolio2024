@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { PrjIntroStyleProp } from "./interface";
+import { media } from "assets/media";
 export const PrjIntroStyleContainer = styled.div<PrjIntroStyleProp>`
   margin-bottom: 20px;
   .skillset-wrap{
@@ -14,6 +15,10 @@ export const PrjIntroStyleContainer = styled.div<PrjIntroStyleProp>`
       background-color: #eee;
       border-radius: 14px;
       padding: 25px;
+      ${media.phone`
+        padding: 15px 20px;
+      
+        `}
       & > div {
         &:not(:first-child) {
           padding-top: 8px;

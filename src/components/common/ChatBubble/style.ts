@@ -7,6 +7,9 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
   padding-bottom: 13px;
   display: flex;
   margin-bottom: 20px;
+  ${media.phone`
+    margin-bottom: 15px;
+    `}
   ${(prop) =>
     prop.$side === "left" &&
     css`
@@ -27,7 +30,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
     line-height: 1.5;
     ${media.phone`
         /* width:100%; */
-        max-width:100%;
+        max-width:85%;
         &:has(img){
           width:100%;
           max-width:100%;
@@ -35,7 +38,7 @@ export const ChatBubbleStyleContainer = styled.div<ChatBubbleStyleProp>`
       `}
     ${media.tablet`
         /* width:100%; */
-        max-width:100%;
+        max-width:85%;
         &:has(img){
           width:100%;
           max-width:100%;

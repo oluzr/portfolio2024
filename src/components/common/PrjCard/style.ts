@@ -11,6 +11,9 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
     padding: 24px 25px;
     gap: 30px 0;
     color: #e5e5ea;
+    ${media.phone`
+      gap: 20px 0;
+    `}
     &:not(:has(.date)) {
       flex-direction: row;
       justify-content: space-between;
@@ -29,7 +32,8 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
         line-height: 1.2;
         font-weight: 400;
         ${media.phone`
-          font-size:20px;
+          font-size:22px;
+          font-weight: 600;
           `}
       }
       p {
@@ -37,6 +41,10 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
         font-size: 14px;
         white-space: pre-line;
         line-height: 1.6;
+        ${media.phone`
+            margin-top: 7px;
+            font-size: 12px;
+            `}
       }
       ul {
         display: flex;
@@ -71,10 +79,17 @@ export const PrjCardStyleContainer = styled.div<PrjCardStyleProp>`
         p {
           font-size: 15px;
           font-weight: 400;
-        }
-        span {
-          font-size: 14px;
-          font-weight: 400;
+          ${media.phone`
+            font-size: 13px;
+            `}
+          }
+          span {
+            font-size: 14px;
+            font-weight: 400;
+            ${media.phone`
+              font-size: 11px;
+              font-weight: 500;
+          `}
         }
       }
     }

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { StyleProp } from "./interface";
+import { media } from "assets/media";
 export const SkillSetStyleContainer = styled.div`
   ul {
     display: flex;
@@ -23,8 +24,11 @@ export const SkillSpanStyleContainer = styled.span<StyleProp>`
   font-size: 12px;
   white-space: pre-line;
   line-height: 1.4;
-  transition: color .2s;
-  ${(prop) => prop.$fontColor && css`
-    color: ${prop.$fontColor};
-  `}
+  transition: color 0.2s;
+  ${media.phone`font-size:11px;`}
+  ${(prop) =>
+    prop.$fontColor &&
+    css`
+      color: ${prop.$fontColor};
+    `}
 `;

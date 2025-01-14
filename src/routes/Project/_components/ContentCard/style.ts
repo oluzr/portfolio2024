@@ -7,10 +7,14 @@ export const ContentCardStyleContainer = styled.div`
     /* padding: 60px var(--mob-padding) 0; */
     padding: 0vh 0px 15vh;
     ${media.phone`
-      padding:14px;
+      /* padding:0; */
     `}
     ul {
       padding-top: 40px;
+      ${media.phone`
+        padding-top:0;
+      `}
+
       li {
         opacity: 0;
         transition: all 0.9s;

@@ -1,3 +1,4 @@
+import { media } from "assets/media";
 import styled from "styled-components";
 export const TimelineStyleContainer = styled.div`
   * {
@@ -35,6 +36,9 @@ export const TimelineStyleContainer = styled.div`
           }
           p {
             font-size: 16px;
+            ${media.phone`
+              /* font-size: 13px; */
+            `}
           }
         }
       }
