@@ -8,7 +8,7 @@ export const CheckboxStyleContainer = styled.div<CheckboxStyleProp>`
 		gap:10px;
 		p{
 			font-size: 14px;
-			color: #000;
+			color: #fff;
 			font-weight: 400;
 		}
 	}
