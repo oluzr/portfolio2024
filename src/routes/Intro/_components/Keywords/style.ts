@@ -10,14 +10,14 @@ export const KeywordsStyleContainer = styled.div`
       flex-direction: row;
       background-color: #00000099;
       border-radius: 15px;
-      padding: 10px 20px;
+      padding: 0px 10px;
       /* overflow: hidden; */
       .index {
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translate(-55px, -50px);
-        width: 110px;
+        transform: translate(-40px, -30px);
+        width: 100px;
         span {
           font-size: 150px;
           /* font-family: "Orbitron", serif; */
@@ -40,7 +40,7 @@ export const KeywordsStyleContainer = styled.div`
         justify-content: center;
         h5 {
           font-weight: 400;
-          font-size: 35px;
+          font-size: 25px;
         }
         p{
           font-weight:400;

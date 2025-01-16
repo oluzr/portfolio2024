@@ -13,7 +13,8 @@ const Profile = () => {
           <Image src="/assets/images/appicon9.png" />
         </div>
         <div className="info">
-          <h5>👩🏻‍💻</h5>
+          {/* <h5>👩🏻‍💻</h5> */}
+          <h5>나라 이</h5>
           <ul>
             <li>
               <Link to={constants.GITHUB_LINK}>

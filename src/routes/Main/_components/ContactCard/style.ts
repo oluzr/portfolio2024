@@ -31,6 +31,7 @@ export const ContactCardStyleContainer = styled.div`
       z-index: -1;
       aspect-ratio: 3.5;
       object-fit: cover;
+      object-position: top center;
       height: 100%;
       ${media.phone`
         aspect-ratio: 2.5;

@@ -1,6 +1,19 @@
 import { media } from "assets/media";
 import styled from "styled-components";
 export const TimelineStyleContainer = styled.div`
+  position: relative;
+  padding-left: 40px;
+  &::before {
+    content: "";
+    display: block;
+    height: 107%;
+    width: 2px;
+    position: absolute;
+    top: -3%;
+    left: 0;
+    background-color: #fff;
+    border-radius: 3px;
+  }
   * {
     color: #fff;
   }
@@ -13,6 +26,20 @@ export const TimelineStyleContainer = styled.div`
       flex-direction: column;
       gap: 30px;
       h4 {
+        position: relative;
+        &::before {
+          content: "";
+          display: block;
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          background-color: #000;
+          border: 4px solid #fff;
+          border-radius: 50%;
+          left: -47px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
         /* color: #000; */
         font-size: 46px;
         letter-spacing: -1px;
@@ -37,6 +64,8 @@ export const TimelineStyleContainer = styled.div`
             display: flex;
             border-radius: 3px;
             font-size: 14px;
+            font-weight: 500;
+            font-family: "Orbitron", serif;
           }
           p {
             font-size: 16px;

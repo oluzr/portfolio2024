@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ProfileStyleContainer = styled.div`
   margin-bottom: 10vh;
   .inner {
-    background: url("/assets/images/selfi2.jpeg") no-repeat top center;
+    background: url("/assets/images/bg-1.jpg") no-repeat center center;
     background-size: cover;
 
     padding: 0px 50px 50px;
@@ -76,9 +76,9 @@ export const ProfileStyleContainer = styled.div`
         display:none;
         `}
       h5 {
-        font-size: 44px;
+        font-size: 34px;
         font-weight: 400;
-        color: #000;
+        color: #fff;
       }
       ul {
         display: flex;
@@ -86,11 +86,13 @@ export const ProfileStyleContainer = styled.div`
         gap: 5px;
         li {
           /* border: 1px solid #fff; */
-          background-color: #000;
+          /* background-color: #000; */
+          background-color: #fff;
           padding: 6px 7px;
           border-radius: 4px;
           a {
-            color: #fff;
+            /* color: #fff; */
+            color: #000;
             display: flex;
             align-items: center;
             gap: 6px;

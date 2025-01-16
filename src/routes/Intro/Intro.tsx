@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Timeline from "./_components/Timeline/Timeline";
 import Profile from "./_components/Profile/Profile";
 import Keywords from "./_components/Keywords/Keywords";
+import ContactCard from "routes/Main/_components/ContactCard/ContactCard";
 const Intro = () => {
   /*
     내 소개
@@ -33,7 +34,9 @@ const Intro = () => {
         <div id="timeline">
           <Timeline />
         </div>
-        <div id="contact"></div>
+        <div id="contact">
+          <ContactCard />
+        </div>
       </div>
       {/* <ThumbnailCard title="contact" imgSrc="/assets/images/bg-1.jpg" /> */}
     </S.IntroStyleContainer>
