@@ -3,6 +3,7 @@ import * as S from "./style";
 import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SiVelog } from "react-icons/si";
+import { constants } from "constants";
 const Profile = () => {
   return (
     <S.ProfileStyleContainer>
@@ -15,13 +16,13 @@ const Profile = () => {
           <h5>👩🏻‍💻</h5>
           <ul>
             <li>
-              <Link to={""}>
+              <Link to={constants.GITHUB_LINK}>
                 <FaGithub />
                 <p>github</p>
               </Link>
             </li>
             <li>
-              <Link to={""}>
+              <Link to={constants.VELOG_LINK}>
                 <SiVelog />
                 <p>velog</p>
               </Link>

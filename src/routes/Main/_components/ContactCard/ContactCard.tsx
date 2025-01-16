@@ -3,6 +3,7 @@ import * as S from "./style";
 import { Link } from "react-router-dom";
 import { SiVelog } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
+import { constants } from "constants";
 const ContactCard = () => {
   return (
     <S.ContactCardStyleContainer>
@@ -12,13 +13,13 @@ const ContactCard = () => {
         <p className="sub-tit">olu-zr@naver.com</p>
         <ul>
           <li>
-            <Link to={""}>
+            <Link to={constants.GITHUB_LINK}>
               <FaGithub />
               <p>github</p>
             </Link>
           </li>
           <li>
-            <Link to={""}>
+            <Link to={constants.VELOG_LINK}>
               <SiVelog />
               <p>velog</p>
             </Link>

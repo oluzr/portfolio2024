@@ -3,6 +3,7 @@ import * as S from "./style";
 import { Link } from "react-router-dom";
 import Timeline from "./_components/Timeline/Timeline";
 import Profile from "./_components/Profile/Profile";
+import Keywords from "./_components/Keywords/Keywords";
 const Intro = () => {
   /*
     내 소개
@@ -11,7 +12,7 @@ const Intro = () => {
   */
   return (
     <S.IntroStyleContainer>
-       <Profile />
+      <Profile />
       <div className="navigate-section">
         <ul>
           <li>
@@ -27,7 +28,7 @@ const Intro = () => {
       </div>
       <div className="contents-section">
         <div id="about">
-         
+          <Keywords />
         </div>
         <div id="timeline">
           <Timeline />

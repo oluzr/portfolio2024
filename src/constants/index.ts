@@ -1,4 +1,6 @@
 export const constants = {
+  GITHUB_LINK: "https://github.com/oluzr",
+  VELOG_LINK: "https://velog.io/@oluzr/posts",
   APPICONS_1: [
     {
       imgUrl: "/assets/images/appicon14.png",
@@ -40,7 +42,7 @@ export const constants = {
     {
       imgUrl: "/assets/images/appicon18.png",
       iconName: "⤷velog",
-      linkTo: "https://github.com/oluzr",
+      linkTo: "https://velog.io/@oluzr/posts",
     },
   ],
   APPICONS_3: [
@@ -73,7 +75,7 @@ export const constants = {
         { title: "intro", link: "/intro" },
         { title: "archive", link: "/archive" },
         { title: "⤷github", link: "https://github.com/oluzr" },
-        { title: "⤷velog", link: "https://github.com/oluzr" },
+        { title: "⤷velog", link: "https://velog.io/@oluzr/posts" },
       ],
     },
     {

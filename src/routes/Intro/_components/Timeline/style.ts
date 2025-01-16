@@ -13,8 +13,12 @@ export const TimelineStyleContainer = styled.div`
       flex-direction: column;
       gap: 30px;
       h4 {
-        font-size: 56px;
-        font-weight: 300;
+        /* color: #000; */
+        font-size: 46px;
+        letter-spacing: -1px;
+        font-weight: 100;
+        font-family: "Orbitron", serif;
+        /* -webkit-text-stroke: 2px solid #fff; */
       }
       ol {
         display: flex;
