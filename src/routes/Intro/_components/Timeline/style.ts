@@ -7,15 +7,15 @@ export const TimelineStyleContainer = styled.div`
     content: "";
     display: block;
     height: 107%;
-    width: 2px;
+    width: 1px;
     position: absolute;
     top: -3%;
     left: 0;
-    background-color: #fff;
+    background-color: #ffffffab;
     border-radius: 3px;
   }
   * {
-    color: #fff;
+    color: #e8e8e8;
   }
   ul {
     display: flex;
@@ -34,9 +34,9 @@ export const TimelineStyleContainer = styled.div`
           width: 8px;
           height: 8px;
           background-color: #000;
-          border: 4px solid #fff;
+          border: 2px solid #ffffffbf;
           border-radius: 50%;
-          left: -47px;
+          left: -45.3px;
           top: 50%;
           transform: translateY(-50%);
         }

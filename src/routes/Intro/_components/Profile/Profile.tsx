@@ -10,7 +10,7 @@ const Profile = () => {
       <div className="inner">
         <div className="avatar-sec">
           {/* <Image src="/assets/images/selfi1.jpeg" /> */}
-          <Image src="/assets/images/appicon9.png" />
+          <Image src="/assets/images/cat.png" />
         </div>
         <div className="info">
           {/* <h5>👩🏻‍💻</h5> */}

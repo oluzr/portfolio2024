@@ -32,7 +32,6 @@ export const CheckboxStyleContainer = styled.div<CheckboxStyleProp>`
 			&.checked {
 				background-color: ${(prop) => prop.$color};
 				border: 1px solid ${(prop) => prop.$color};
-
 				span {
 					opacity: 1;
 					transform: translate(-50%, -50%);

@@ -38,13 +38,22 @@ export const KeywordsStyleContainer = styled.div`
         gap: 15px;
         color: #fff;
         justify-content: center;
+        width: 100%;
         h5 {
           font-weight: 400;
-          font-size: 25px;
+          font-size: 21px;
+          font-family: "Fira Code", monospace;
+          background-color: #ffffff1f;
+          width: fit-content;
+          padding: 5px 10px;
+          border-radius: 7px;
         }
         p{
           font-weight:400;
           font-size: 13px;
+          max-width: 90%;
+          line-height: 1.5;
+
         }
       }
     }
