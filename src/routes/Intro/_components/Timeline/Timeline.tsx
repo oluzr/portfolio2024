@@ -4,6 +4,7 @@ import { TIMELINE_DATA } from "api/data";
 const Timeline = () => {
   return (
     <S.TimelineStyleContainer>
+      <h3>Timeline</h3>
       <ul>
         {TIMELINE_DATA.map((timeline, idx) => (
           <li key={idx}>

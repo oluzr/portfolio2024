@@ -19,7 +19,7 @@ const Main = () => {
             notiNum={6}
           />
           <ThumbnailCard
-            title="intro"
+            title="README.md"
             imgSrc="/assets/images/appicon4.png"
             size="square"
             linkTo="/intro"

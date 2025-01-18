@@ -26,7 +26,7 @@ export const constants = {
   APPICONS_2: [
     {
       imgUrl: "/assets/images/appicon4.png",
-      iconName: "intro",
+      iconName: "README.md",
       linkTo: "/intro",
     },
     {
@@ -72,7 +72,7 @@ export const constants = {
     {
       title: "about me",
       subMenu: [
-        { title: "intro", link: "/intro" },
+        { title: "README.md", link: "/intro" },
         { title: "archive", link: "/archive" },
         { title: "⤷github", link: "https://github.com/oluzr" },
         { title: "⤷velog", link: "https://velog.io/@oluzr/posts" },
