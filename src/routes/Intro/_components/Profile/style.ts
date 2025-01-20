@@ -91,7 +91,6 @@ export const ProfileStyleContainer = styled.div`
           padding: 6px 7px;
           border-radius: 4px;
           a {
-            /* color: #fff; */
             color: #000;
             display: flex;
             align-items: center;
