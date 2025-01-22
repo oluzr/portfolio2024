@@ -29,11 +29,11 @@ export const constants = {
       iconName: "README.md",
       linkTo: "/intro",
     },
-    {
+    /* {
       imgUrl: "/assets/images/appicon5.png",
       iconName: "archive",
       linkTo: "/archive",
-    },
+    }, */
     {
       imgUrl: "/assets/images/appicon17.png",
       iconName: "⤷github",
@@ -73,7 +73,7 @@ export const constants = {
       title: "about me",
       subMenu: [
         { title: "README.md", link: "/intro" },
-        { title: "archive", link: "/archive" },
+        // { title: "archive", link: "/archive" },
         { title: "⤷github", link: "https://github.com/oluzr" },
         { title: "⤷velog", link: "https://velog.io/@oluzr/posts" },
       ],

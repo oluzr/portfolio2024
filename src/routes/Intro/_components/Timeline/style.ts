@@ -8,9 +8,10 @@ export const TimelineStyleContainer = styled.div`
     color: transparent;
     -webkit-text-stroke: 1px #fff;
     font-weight: 400;
-    padding-left: 13px;
+    /* padding-left: 13px; */
     /* letter-spacing: -5px; */
-    /* text-align: center; */
+    text-align: center;
+    display: none;
     &::first-letter {
       /* font-size: 170px; */
     }
@@ -24,14 +25,15 @@ export const TimelineStyleContainer = styled.div`
     color: #e8e8e8;
   }
   ul {
-    padding-left: 40px;
+    /* padding-left: 40px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 80px;
     position: relative;
+    padding-top: 20vh;
+    padding-bottom: 30vh;
     ${media.phone`
-      margin-left:20px;
-      padding-left: 30px;
       `}
     &::before {
       content: "";
@@ -40,14 +42,46 @@ export const TimelineStyleContainer = styled.div`
       width: 1px;
       position: absolute;
       top: -3%;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       background-color: #ffffffab;
+      background: linear-gradient(
+        transparent,
+        #ffffffab,
+        #ffffffab,
+        #ffffffab,
+        transparent
+      );
       border-radius: 3px;
     }
     & > li {
       display: flex;
       flex-direction: column;
       gap: 30px;
+      width: 100%;
+      &:nth-child(even) {
+        padding-right: 52%;
+        align-items: flex-end;
+        h4::before {
+          right: -25px;
+        }
+        ol {
+          padding-left: 20px;
+          /* align-items: flex-end; */
+          li {
+            align-items: flex-end;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        padding-left: 52%;
+        h4::before {
+          left: -25px;
+        }
+        ol {
+          padding-right: 20px;
+        }
+      }
       h4 {
         position: relative;
         &::before {
@@ -59,11 +93,9 @@ export const TimelineStyleContainer = styled.div`
           background-color: #000;
           border: 2px solid #ffffffbf;
           border-radius: 50%;
-          left: -45.3px;
           top: 50%;
           transform: translateY(-50%);
           ${media.phone`
-            left: -35.5px;
               
             `}
         }
@@ -102,7 +134,7 @@ export const TimelineStyleContainer = styled.div`
             border-radius: 3px;
             font-size: 14px;
             font-weight: 500;
-            font-family: "Orbitron", serif;
+            /* font-family: "Orbitron", serif; */
             ${media.phone`
               font-size: 11px;
             `}
@@ -119,5 +151,4 @@ export const TimelineStyleContainer = styled.div`
       }
     }
   }
-  
 `;

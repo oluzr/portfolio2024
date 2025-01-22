@@ -17,7 +17,7 @@ const Intro = () => {
       <div className="navigate-section">
         <ul>
           <li>
-            <Link to={"#about"}>about me</Link>
+            <Link to={"#about"}>keywords</Link>
           </li>
           <li>
             <Link to={"#timeline"}>timeline</Link>

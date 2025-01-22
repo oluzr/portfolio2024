@@ -4,6 +4,7 @@ import { FaGithub } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { SiVelog } from "react-icons/si";
 import { constants } from "constants";
+import { HiOutlineLink } from "react-icons/hi";
 const Profile = () => {
   return (
     <S.ProfileStyleContainer>
@@ -15,6 +16,12 @@ const Profile = () => {
         <div className="info">
           {/* <h5>👩🏻‍💻</h5> */}
           <h5>나라 이</h5>
+          <div className="link">
+            <Link to={constants.GITHUB_LINK}>
+              <HiOutlineLink />
+              <p>{constants.GITHUB_LINK}...</p>
+            </Link>
+          </div>
           <ul>
             <li>
               <Link to={constants.GITHUB_LINK}>

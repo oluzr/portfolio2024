@@ -2,20 +2,23 @@ import { media } from "assets/media";
 import styled from "styled-components";
 export const KeywordsStyleContainer = styled.div`
   h3 {
-    font-size: 120px;
+    font-size: 50px;
     margin-bottom: 40px;
-    font-family: "Rubik Bubbles", serif;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
+    /* font-family: "Rubik Bubbles", serif; */
+    /* color: transparent; */
+    /* -webkit-text-stroke: 1px #fff; */
     font-weight: 400;
+    color:#fff;
     /* text-transform: uppercase; */
-    padding-left: 13px;
+    /* padding-left: 13px; */
+    text-align: center;
     letter-spacing: -5px;
     animation-name: rotateAnimation;
     animation-duration: 1ms;
     animation-direction: alternate;
     animation-timeline: scroll(block nearest);
     transform-origin: center center;
+    display: none;
     ${media.phone`
       text-align: center;
       letter-spacing: -1px;
@@ -25,8 +28,8 @@ export const KeywordsStyleContainer = styled.div`
   ul {
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-left: 30px;
+    gap: 60px;
+    padding: 0 30px;
     ${media.phone`
       gap: 17px;
       padding-left: 10px;
@@ -36,7 +39,17 @@ export const KeywordsStyleContainer = styled.div`
       flex-direction: row;
       background-color: #00000099;
       border-radius: 15px;
-      padding: 0px 10px;
+      padding: 10px 30px;
+      &:nth-child(even) {
+        flex-direction: row-reverse;
+        .index {
+          transform: translate(60px, -40px);
+        }
+        .cont {
+          text-align: right;
+          align-items: flex-end;
+        }
+      }
       ${media.phone`
         padding:14px 10px 15px 0;
         
@@ -46,7 +59,7 @@ export const KeywordsStyleContainer = styled.div`
         display: flex;
         align-items: center;
         justify-content: center;
-        transform: translate(-40px, -30px);
+        transform: translate(-60px, -40px);
         width: 100px;
 
         ${media.phone`
@@ -55,7 +68,7 @@ export const KeywordsStyleContainer = styled.div`
 
       `}
         span {
-          font-size: 130px;
+          font-size: 160px;
           font-family: "Rubik Bubbles", serif;
           color: transparent;
           -webkit-text-stroke: 1px #fff;
@@ -95,9 +108,10 @@ export const KeywordsStyleContainer = styled.div`
         p {
           font-weight: 400;
           font-size: 13px;
-          max-width: 90%;
-          white-space:pre-line;
+          /* max-width: 85%; */
+          white-space: pre-line;
           line-height: 1.5;
+          word-break: keep-all;
           ${media.phone`
             white-space:unset;
             font-size:11px;
@@ -113,7 +127,7 @@ export const KeywordsStyleContainer = styled.div`
     }
     to {
       transform: translateY(-140px);
-      opacity: .1;
+      opacity: 0.1;
     }
   }
 `;

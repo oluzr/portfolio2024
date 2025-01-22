@@ -10,7 +10,6 @@ const Timeline = () => {
           <li key={idx}>
             <h4>{timeline.year}</h4>
             <ol>
-
             {timeline.contents.map((cont, idx) => (
               <li key={idx}>
                 <span>{cont.date}</span>

@@ -703,15 +703,14 @@ export const TIMELINE_DATA: TimelineType[] = [
     year: 2022,
     contents: [
       {
-        date: "2022.01~",
-        content: "(주)커넥트웨이브 / 웹퍼블리셔",
+        date: "2022.01~2023.05",
+        content: "(주)커넥트웨이브 근무 / 웹퍼블리셔",
       },
     ],
   },
   {
     year: 2023,
     contents: [
-      { date: "~2023.05", content: "(주)커넥트웨이브 / 웹퍼블리셔" },
       {
         date: "2023/08~2023/10",
         content: "모던 자바스크립트 Deep Dive 북스터디",
@@ -720,14 +719,22 @@ export const TIMELINE_DATA: TimelineType[] = [
         date: "2023/06~2024/01",
         content: "제로베이스 프론트엔드 스쿨 16기 수료",
       },
+      {
+        date: "2023/11~2024/01",
+        content: "사이드 프로젝트 'USPORTS' 프론트 개발",
+      },
     ],
   },
   {
     year: 2024,
     contents: [
       {
+        date: "2024/01~2024/02",
+        content: "사이드 프로젝트 'SOM' 프론트 개발",
+      },
+      {
         date: "2024.04~2024.12",
-        content: "(주)라이프스타일프로젝트 / 프론트엔드 개발",
+        content: "(주)라이프스타일프로젝트 근무 / 프론트엔드 개발",
       },
     ],
   },

@@ -1,21 +1,26 @@
 import styled from "styled-components";
 export const IntroStyleContainer = styled.section`
+  /* background-color: #fff; */
   .navigate-section {
     position: sticky;
-    top: 40%;
+    /* top: 40%; */
+    top: 0px;
+    /* display: none; */
+    margin-bottom: 50px;
     ul {
       display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      gap: 8px;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
       li {
-        padding-right: 14px;
+        /* padding-right: 14px; */
         position: relative;
         &::before {
           position: absolute;
-          right: 0;
-          top: 50%;
-          transform: translateY(-50%);
+          left: 50%;
+          top: -10px;
+          transform: translateX(-50%);
           content: "";
           display: block;
           width: 5px;

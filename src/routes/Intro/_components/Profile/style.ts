@@ -5,28 +5,28 @@ export const ProfileStyleContainer = styled.div`
   .inner {
     background: url("/assets/images/bg-1.jpg") no-repeat center center;
     background-size: cover;
-
-    padding: 0px 50px 50px;
+    background: #000;
+    padding: 30px 50px 30px;
     border-radius: 14px;
     display: flex;
     flex-direction: row;
+    flex-direction: column;
     align-items: flex-end;
-    gap: 50px;
-    position: relative;
+    align-items: center;
+    gap: 17px;
     ${media.phone`
       padding: 0px 25px 30px;
       `}
     ${media.tablet`
       padding: 0px 25px 30px;
       `}
-    &::after {
+  /*   &::after {
       content: "";
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-
       z-index: 0;
       border-radius: 14px;
       animation-name: rotateAnimation2;
@@ -34,10 +34,10 @@ export const ProfileStyleContainer = styled.div`
       animation-direction: alternate;
       animation-timeline: scroll(block nearest);
       transform-origin: center center;
-    }
+    } */
     .avatar-sec {
       position: relative;
-      transform: translateY(80px);
+      /* transform: translateY(80px); */
       z-index: 1;
       ${media.phone`
         transform: translateY(60px);
@@ -51,7 +51,7 @@ export const ProfileStyleContainer = styled.div`
         animation-direction: alternate;
         animation-timeline: scroll(block nearest);
         transform-origin: center center;
-        width: 200px;
+        width: 150px;
         aspect-ratio: 1;
         border-radius: 50%;
         object-fit: cover;
@@ -67,6 +67,7 @@ export const ProfileStyleContainer = styled.div`
       position: relative;
       display: flex;
       flex-direction: column;
+      align-items: center;
       gap: 10px;
       z-index: 1;
       ${media.phone`
@@ -76,27 +77,46 @@ export const ProfileStyleContainer = styled.div`
         display:none;
         `}
       h5 {
-        font-size: 34px;
+        font-size: 28px;
         font-weight: 400;
         color: #fff;
+        text-align: center;
+      }
+      .link {
+        a {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          color: #fff;
+          gap: 2px;
+          &:hover {
+            text-decoration: underline;
+            /* color: #0969da; */
+          }
+          p {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
       }
       ul {
         display: flex;
+        display: none;
         flex-direction: row;
         gap: 5px;
         li {
           /* border: 1px solid #fff; */
           /* background-color: #000; */
           background-color: #fff;
-          padding: 6px 7px;
+          padding: 4px 6px;
           border-radius: 4px;
           a {
             color: #000;
             display: flex;
             align-items: center;
-            gap: 6px;
+            gap: 3px;
             p {
-              font-size: 12px;
+              font-size: 11px;
               font-weight: 400;
             }
           }
