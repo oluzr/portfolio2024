@@ -61,11 +61,7 @@ export const constants = {
       iconName: "USPORTS",
       linkTo: "/work/usports",
     },
-    {
-      imgUrl: "/assets/images/appicon19.png",
-      iconName: "tomatter",
-      linkTo: "/work/tomatter",
-    },
+   
   ],
   ASIDE_MEMU: [
     { title: "홈", link: "" },

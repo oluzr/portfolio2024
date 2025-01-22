@@ -7,22 +7,24 @@ export const OPTIMA_RX_DATA: ProjectItemType = [
     title: "옵티마 RX에 대해 간략하게 설명해줘",
     contents: [
       "옵티마RX(구 스킨RX)는 다양한 뷰티 및 생활용품을 제공하는 온라인 쇼핑몰으로 ASP 언어로 개발된 구 쇼핑몰 사이트입니다.",
-      "LSP와 Skin RX의 합병 과정에서 문서화가 부족한 상태였기에, 기존 ASP 코드와 기능에 대한 문서화 작업을 주도하여 시스템 이해도를 높이고 후속 작업의 효율성을 극대화하기 위해 노력했습니다.",
     ],
   },
   {
     title: "담당한 업무 내용에 대해 말해줘",
     contents: [
-      "첫째로 기존 ASP로 작성된 코드를 분석하고 문서화를 통해 팀의 업무 효율성을 극대화시켰습니다. 필요한 유지보수 및 버그 수정을 진행하여 웹사이트의 안정성과 기능 향상에 기여하였습니다.",
-      "Optima RX 브랜드에 맞게 웹사이트의 SEO를 최적화하여 검색 엔진 결과에서의 가시성을 증가시켰습니다. 메타 키워드 태그 개선을 통한 SEO 최적화를 담당하였습니다.",
-      "무엇보다 신규 서비스인 'AI 소분판매 기능' 을 위한 단독 페이지 개발에 참여했습니다. 해당 페이지의 경우에는 리액트로 개발되었으며 기존 asp 코드와 통합하는 과정에서 주도적으로 방법을 고안하였습니다.",
+      "첫째로 기존 ASP로 작성된 코드를 분석하고 문서화를 통해 팀의 업무 효율성을 극대화시켰습니다.",
+      "LSP와 Skin RX의 합병 과정에서 인수인계 문서가 부족한 상태였기에, 기존 ASP 코드 및 기능에 대한 문서화 작업을 주도하여 사이트 이해도를 높이고 후속 작업 효율성을 극대화시키기 위해 노력했습니다",
+      "뿐만 아니라 디자인 리뉴얼 및 버그 수정을 통해 웹사이트의 안정성과 기능 향상에 기여하였습니다.",
+      "둘째로 SEO 최적화를 통해 검색 엔진 결과에서의 가시성을 증가시켰습니다. 메타 키워드 태그 개선을 통한 SEO 최적화를 담당하였습니다.",
+      "셋째로 신규 서비스인 'AI 소분판매 기능' 을 위한 단독 페이지 개발에 참여했습니다. 해당 페이지의 경우에는 리액트로 개발되었으며 기존 asp 코드와 통합하는 과정에서 주도적으로 방법을 고안하였습니다.",
     ],
   },
   {
     title: "ai 소분판매 관련 작업한 내용에 대해 더 자세히 말해줘",
     contents: [
-      "React로 개발 후 기존 레거시 ASP와 통합 방법을 고안했습니다.",
-      "web.config 파일에 별도 rule 추가하는 등 라우팅 관련 오류를 처리했습니다",
+      "신규 서비스 론칭을 위해 'AI 소분판매 기능' 을 다루는 React 페이지를 개발 후 기존 레거시 ASP 코드와 통합하였습니다.",
+      "그 과정에서 주도적으로 방법을 고안하였고 기존 옵티마RX 유저 정보를 신규 개발된 페이지에서 활용하기 위하여 서버 개발자와의 원활한 커뮤니케이션을 통해 사이트 안정성을 증대시켰습니다.",
+      "web.config 파일에 별도 rule 추가하는 등 SPA 페이지 라우팅 오류를 처리했습니다",
       {
         code: `<rule name="React App Routes" stopProcessing="true">
           ㅤ<match url="^ai/.*" />
@@ -39,9 +41,9 @@ export const OPTIMA_RX_DATA: ProjectItemType = [
   {
     title: "전체 디렉토리 코드 분석 및 문서화 정리한 것에 대해 설명해줘",
     contents: [
-      "1. 페이지 별 호출 저장 프로시저명, 매개변수 등 문서화 정리",
-      "2. API 요청 (ajax) 코드 HTTP 타입 및 실행 내용 파악 및 정리",
-      "문서화된 내용을 기반으로 이후 버그 수정 및 디자인 리뉴얼 작업 시 빠른 처리와 업무 효율을 높일 수 있었습니다 🥰",
+      "각 페이지별로 호출하는 저장 프로시저명과 매개변수를 정리하여 문서화했습니다.",
+      "또한, API 요청(ajax) 코드를 확인하여 HTTP 타입과 실행 내용을 파악하고 정리했습니다.",
+      "이렇게 문서화된 내용을 바탕으로 이후 버그 수정이나 디자인 리뉴얼 작업 시 훨씬 빠르게 처리할 수 있었고, 업무 효율도 크게 향상되었습니다. 🥰",
     ],
   },
 ];
@@ -72,30 +74,41 @@ export const OPTIMACARE_DATA: ProjectItemType = [
         img: "/assets/gif/opcare-map.gif",
       },
       {
-        "관련 뉴스 보기 서버 API 연동": "필터링 기능 및 페이지네이션 구현",
+        "관련 뉴스 보기 서버 API 연동": [
+          "✔️ 필터링 기능 및 페이지네이션 UI 구현",
+          "✔️ 마우스 호버 시 카카오 공유 및 링크 복사 아이콘 노출",
+          "✔️ 카카오 공유하기 기능",
+        ],
       },
       {
         img: "/assets/gif/opcare-news.gif",
       },
-      { "가맹 접수 폼 유효성 검사 처리": [""] },
+      // { "가맹 접수 폼 유효성 검사 처리": [""] },
       {
-        "제품 보기 리스트 및 제품 상세 API 연동":
-          "필터링 기능 및 페이지네이션 구현",
+        "제품 보기 리스트 및 제품 상세 ": [
+          "✔️ 제품 리스트 필터링 검색 및 제품 상세 정보 API 연동",
+          "✔️ 필터링 기능 및 목록 페이지네이션 UI 구현",
+        ],
       },
       {
         img: "/assets/gif/opcare-item.gif",
       },
+      "그 외 가맹 접수 폼 유효성 검사 처리와, 반응형 CSS 작업 등 프론트엔드 개발 전담하였습니다.",
     ],
   },
 ];
 
 export const LSP_DATA: ProjectItemType = [
   {
-    title: "주요내용",
+    title: "주요 작업 내용 정리해줘.",
     contents: [
-      "스크롤 기반 사용자 상호작용 인터랙티브 애니메이션 UI 구현",
+      "자사 사이트 리뉴얼을 통해 일관되고 매끄러운 사용자 경험을 고려한 인터페이스를 구현하며 브랜드의 메시지를 명확하게 전달하기 위해 노력하였습니다.",
+      "웹디자이너와 백엔드 개발자와 긴밀한 협업을 통해 전체 프로젝트의 완성도를 높이기 위해 세심한 노력을 기울였습니다",
+      "스크롤 기반 사용자 상호작용 인터랙티브 애니메이션 UI 구현 및 PC/Tablet/Mobile 반응형 CSS 작업 진행하였습니다.",
       { "관련 뉴스 보기 서버 API 연동": "필터링 기능 및 페이지네이션 구현" },
-      "PC/Tablet/Mobile 반응형 css 작업",
+      {
+        img: "/assets/gif/lsp-gif.gif",
+      },
     ],
   },
 ];
@@ -575,8 +588,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     title: "옵티마 RX",
     // startDate: "2024/07",
     // endDate: "2024/10",
-    linkTo:
-      "https://play.google.com/store/apps/details?id=com.lspworld.optimapharmn&pli=1",
+    linkTo: "https://www.optimarx.co.kr/",
     subTitle: "기존 ASP 사이트 유지보수 및 신규 리액트 페이지 개발",
     contribution: 60,
     participants: ["front"],
@@ -601,6 +613,7 @@ export const PRJ_CARDS_DATA: PrjCardProp[] = [
     keywords: [
       "📅 2024.07~2024.07",
       "✔️ 프론트 개발 전담",
+      "✔️ 주변 약국 지도 찾기 개발",
       "✔️ 반응형 제작 (PC, tablet, mobile)",
     ],
     feedback: [
@@ -684,6 +697,16 @@ export const SIDEPRJ_CARDS_DATE: PrjCardProp[] = [
     ],
   },
 ];
+
+export const SITES_LINK = {
+  optimacare: "https://www.optimacare.co.kr/",
+  lsp: "http://www.lspworld.com/",
+  optimaRx: "https://www.optimarx.co.kr/",
+  som: "https://github.com/LeeAndRyu/SOM_FE",
+  optimaApp:
+    "https://play.google.com/store/apps/details?id=com.lspworld.optimapharmn&pli=1",
+  usports: "https://github.com/AnonymousZB14/USports_FE",
+};
 
 // introduction
 

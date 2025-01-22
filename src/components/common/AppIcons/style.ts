@@ -7,7 +7,6 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
   justify-content: center;
   gap: 10px;
   z-index: 2;
- 
   &:has(.clicked) {
     z-index: 4;
     span{
@@ -22,6 +21,7 @@ export const AppIconsStyleContainer = styled.div<AppIconsStyleProp>`
     font-size: 13px;
   }
   .app-icons {
+    min-height: 104px;
     border-radius: 12px;
     backdrop-filter: blur(10px);
     background-color: #ffffff34;

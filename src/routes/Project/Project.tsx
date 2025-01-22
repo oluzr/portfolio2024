@@ -6,6 +6,8 @@ import PrjIntro from "./_components/PrjIntro/PrjIntro";
 import BackBtn from "components/common/BackBtn/BackBtn";
 import useIsMobile from "hooks/useIsMobile";
 import Feedback from "components/common/Feedback/Feedback";
+import GoToSite from "./_components/GoToSite/GoToSite";
+import { ProjectNameType } from "types/app/type";
 const Project = () => {
   const { value } = useParams();
   const navigate = useNavigate();
@@ -22,6 +24,7 @@ const Project = () => {
       {!isItMobile && <BackBtn />}
       <PrjIntro value={value} />
       <ContentCard value={value} />
+      <GoToSite value={value as ProjectNameType} />
     </S.ProjectStyleContainer>
   );
 };

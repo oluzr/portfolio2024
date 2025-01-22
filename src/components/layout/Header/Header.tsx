@@ -51,7 +51,7 @@ const Header = () => {
           />
           <AppIcons
             title="Side Project"
-            notiNum={3}
+            notiNum={2}
             icons={constants.APPICONS_3}
             style={{
               bottom: "30%",

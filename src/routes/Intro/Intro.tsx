@@ -5,30 +5,24 @@ import Timeline from "./_components/Timeline/Timeline";
 import Profile from "./_components/Profile/Profile";
 import Keywords from "./_components/Keywords/Keywords";
 import ContactCard from "routes/Main/_components/ContactCard/ContactCard";
+import { useState } from "react";
 const Intro = () => {
-  /*
-    내 소개
-    타임라인
-    contact card
-  */
+  const menuList = ["keywords", "timeline", "contact"];
+  const [activeMenu, setActiveMenu] = useState("keywords");
   return (
     <S.IntroStyleContainer>
       <Profile />
       <div className="navigate-section">
         <ul>
-          <li>
-            <Link to={"#about"}>keywords</Link>
-          </li>
-          <li>
-            <Link to={"#timeline"}>timeline</Link>
-          </li>
-          <li>
-            <Link to={"#contact"}>contact</Link>
-          </li>
+          {menuList.map((menu) => (
+            <li className={activeMenu == menu ? "active" : ""}>
+              <Link to={`#${menu}`}>{menu}</Link>
+            </li>
+          ))}
         </ul>
       </div>
       <div className="contents-section">
-        <div id="about">
+        <div id="keywords">
           <Keywords />
         </div>
         <div id="timeline">
