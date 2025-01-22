@@ -1,10 +1,19 @@
+import { media } from "assets/media";
 import styled from "styled-components";
 export const GoToSiteStyleContainer = styled.div`
   margin-bottom: 30px;
+  ${media.phone`
+    margin-bottom: 0px;
+    `}
   ul {
     display: flex;
     flex-direction: row;
     gap: 30px;
+    ${media.phone`
+      gap: 12px;
+      flex-direction: column;
+    
+      `}
     li {
       flex: 1;
       transition: all 0.2s;
@@ -27,7 +36,6 @@ export const GoToSiteStyleContainer = styled.div`
         }
         h6 svg {
           transform: rotate(190deg);
-        
         }
         &::before {
           width: 93%;
@@ -38,11 +46,15 @@ export const GoToSiteStyleContainer = styled.div`
         position: relative;
         display: flex;
         flex-direction: column;
+
         gap: 10px;
         border-radius: 10px;
         color: #000;
         padding: 30px 10% 33px;
-
+        ${media.phone`
+          align-items:center;
+          padding: 14px 20px 23px;
+          `}
         h6 {
           font-size: 26px;
           font-weight: 700;
@@ -50,6 +62,15 @@ export const GoToSiteStyleContainer = styled.div`
           align-items: center;
           flex-direction: row;
           gap: 5px;
+          ${media.phone`
+            font-size: 20px;
+            flex-direction: row-reverse;
+            svg{
+              width:30px !important;
+              height:30px !important;
+            }
+
+          `}
           svg {
             width: 40px;
             height: 40px;
