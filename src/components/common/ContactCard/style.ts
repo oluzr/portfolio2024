@@ -10,42 +10,45 @@ export const ContactCardStyleContainer = styled.div`
   * {
     color: #fff;
   }
-  .thumb {
+  .inner {
     width: 100%;
-    aspect-ratio: 3.5;
+    /* aspect-ratio: 3.5; */
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 7px;
-    padding: 30px 40px;
+    padding: 10vh 40px 30px;
     justify-content: flex-end;
-    background: linear-gradient(#00000030, #000);
+    background-color: #000;
     border-radius: 10px;
-    overflow: hidden;
-    img {
-      display: flex;
-      width: 100%;
+    ${media.phone`
+      padding: 8vh 40px 30px;
+      `}
+    .thumb {
       position: absolute;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      aspect-ratio: 3.5;
-      object-fit: cover;
-      object-position: top center;
-      height: 100%;
+      bottom: 0;
+      right: 30px;
+      width: 140px;
+      aspect-ratio: 1;
       ${media.phone`
-        aspect-ratio: 2.5;
-        `}
-      ${media.tablet`
-          aspect-ratio: 2.5;
-          `}
+        width: 80px;
+      `}
     }
     .main-tit {
       font-size: 46px;
+      ${media.phone`
+        font-size: 26px;
+      `}
     }
     .sub-tit {
-      font-size: 16px;
+      font-size: 15px;
       padding-left: 3px;
+      align-items: center;
+      display: flex;
+      gap: 3px;
+      ${media.phone`
+        font-size: 13px;
+      `}
     }
     ul {
       display: flex;
@@ -56,12 +59,18 @@ export const ContactCardStyleContainer = styled.div`
         border: 1px solid #fff;
         padding: 6px 7px;
         border-radius: 4px;
+        ${media.phone`
+          padding: 3px 5px;
+      `}
         a {
           display: flex;
           align-items: center;
           gap: 6px;
           p {
             font-size: 12px;
+            ${media.phone`
+        font-size: 10px;
+      `}
           }
         }
       }

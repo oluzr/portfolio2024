@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Timeline from "./_components/Timeline/Timeline";
 import Profile from "./_components/Profile/Profile";
 import Keywords from "./_components/Keywords/Keywords";
-import ContactCard from "routes/Main/_components/ContactCard/ContactCard";
+import ContactCard from "components/common/ContactCard/ContactCard";
 import { useEffect, useRef, useState } from "react";
 import { useInView } from "react-intersection-observer";
 const Intro = () => {

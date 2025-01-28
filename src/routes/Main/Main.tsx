@@ -2,7 +2,7 @@ import CursorAnimation from "components/common/Cursor/Cursor";
 import * as S from "./style";
 import ThumbnailCard from "components/common/ThumbnailCard/ThumbnailCard";
 import AppIcon from "components/common/AppIcon/AppIcon";
-import ContactCard from "./_components/ContactCard/ContactCard";
+import ContactCard from "../../components/common/ContactCard/ContactCard";
 import EmojiWrap from "components/common/EmojiWrap/EmojiWrap";
 import { constants } from "constants";
 const Main = () => {
