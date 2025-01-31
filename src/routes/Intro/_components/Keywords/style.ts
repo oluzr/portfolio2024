@@ -53,7 +53,7 @@ export const KeywordsStyleContainer = styled.div`
       }
 
       ${media.phone`
-        padding:14px 10px 15px 0;
+        padding:14px 10px 15px 15px;
       `}
       /* overflow: hidden; */
       .index {
@@ -65,14 +65,12 @@ export const KeywordsStyleContainer = styled.div`
 
         ${media.phone`
           width: fit-content;
-          &:nth-child(even){
-            
-              transform: translate(10px, -65px) !important;
-            
+          &:is(li:nth-child(even)>div){
+              transform: translate(20px, -55px) !important;
           }
-          &:nth-child(odd){
+          &:is(li:nth-child(odd)>div){
             
-              transform: translate(-10px, -65px) !important;
+              transform: translate(-20px, -55px) !important;
             
           }
       `}
@@ -89,7 +87,7 @@ export const KeywordsStyleContainer = styled.div`
             -2px -2px 0 red,
             2px -2px 0 red; */
           ${media.phone`
-            font-size:80px;
+            font-size:60px;
           `}
         }
       }
@@ -116,7 +114,7 @@ export const KeywordsStyleContainer = styled.div`
         }
         p {
           font-weight: 400;
-          font-size: 13px;
+          font-size: 14px;
           /* max-width: 85%; */
           white-space: pre-line;
           line-height: 1.5;

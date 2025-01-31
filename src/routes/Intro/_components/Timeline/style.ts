@@ -64,12 +64,20 @@ export const TimelineStyleContainer = styled.div`
         align-items: flex-end;
         h4::before {
           right: -25px;
+          ${media.phone`
+            
+            right: -11px;
+            `}
         }
         ol {
           padding-left: 20px;
           /* align-items: flex-end; */
           li {
             align-items: flex-end;
+            p{
+              text-align:right;
+              word-break:keep-all;
+            }
           }
         }
       }
@@ -77,6 +85,10 @@ export const TimelineStyleContainer = styled.div`
         padding-left: 52%;
         h4::before {
           left: -25px;
+          ${media.phone`
+            
+            left: -11px;
+            `}
         }
         ol {
           padding-right: 20px;
@@ -96,9 +108,15 @@ export const TimelineStyleContainer = styled.div`
           top: 50%;
           transform: translateY(-50%);
           ${media.phone`
-              
+            
+            width: 5px;
+            height: 5px;
             `}
         }
+        ${media.phone`
+              
+            font-size: 40px;
+            `}
         /* color: #000; */
         font-size: 47px;
         letter-spacing: -1px;
@@ -144,7 +162,8 @@ export const TimelineStyleContainer = styled.div`
             line-height: 1.5;
             ${media.phone`
               font-size: 12px;
-              width:90%;
+              /* width:90%; */
+
             `}
           }
         }

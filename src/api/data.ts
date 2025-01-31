@@ -744,7 +744,7 @@ export const TIMELINE_DATA: TimelineType[] = [
       },
       {
         date: "2023/11~2024/01",
-        content: "사이드 프로젝트 'USPORTS' 프론트 개발",
+        content: "사이드 프로젝트 'USPORTS'",
       },
     ],
   },
@@ -753,7 +753,7 @@ export const TIMELINE_DATA: TimelineType[] = [
     contents: [
       {
         date: "2024/01~2024/02",
-        content: "사이드 프로젝트 'SOM' 프론트 개발",
+        content: "사이드 프로젝트 'SOM'",
       },
       {
         date: "2024.04~2024.12",
