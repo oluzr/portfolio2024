@@ -21,6 +21,7 @@ export const ContactCardStyleContainer = styled.div`
     justify-content: flex-end;
     background-color: #000;
     border-radius: 10px;
+    overflow: hidden;
     ${media.phone`
       padding: 8vh 40px 30px;
       `}
@@ -28,10 +29,11 @@ export const ContactCardStyleContainer = styled.div`
       position: absolute;
       bottom: 0;
       right: 30px;
-      width: 140px;
+      width: 35%;
       aspect-ratio: 1;
+      max-width:230px;
       ${media.phone`
-        width: 80px;
+        width: 100px;
       `}
     }
     .main-tit {
