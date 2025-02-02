@@ -66,7 +66,7 @@ export const KeywordsStyleContainer = styled.div`
         /* transform: translate(-60px, -40px); */
 
         width: 100px;
-        animation-name: rotateAnimation;
+        animation-name: rotateAnimation2;
         animation-duration: 1ms;
         animation-direction: alternate;
         animation-timeline: scroll(block nearest);
@@ -136,14 +136,14 @@ export const KeywordsStyleContainer = styled.div`
       }
     }
   }
-  @keyframes rotateAnimation {
+  @keyframes rotateAnimation2 {
     from {
       transform: translateY(0px);
       opacity: 1;
     }
     to {
-      transform: translateY(-140px);
-      opacity: 0.1;
+      transform: translateY(-110px);
+      opacity: 0.4;
     }
   }
 `;

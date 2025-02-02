@@ -1,7 +1,7 @@
 import { media } from "assets/media";
 import styled from "styled-components";
 export const ProfileStyleContainer = styled.div`
-  margin-bottom: 8vh;
+  margin-bottom: 10vh;
   .inner {
     background: url("/assets/images/bg-1.jpg") no-repeat center center;
     background-size: cover;
@@ -20,27 +20,12 @@ export const ProfileStyleContainer = styled.div`
     ${media.tablet`
       padding: 0px 25px 30px;
       `}
-  /*   &::after {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-      border-radius: 14px;
-      animation-name: rotateAnimation2;
-      animation-duration: 1ms;
-      animation-direction: alternate;
-      animation-timeline: scroll(block nearest);
-      transform-origin: center center;
-    } */
     .avatar-sec {
       position: relative;
       /* transform: translateY(80px); */
       z-index: 1;
       ${media.phone`
-        transform: translateY(50px);
+        transform: translateY(30px);
         `}
       ${media.tablet`
         transform: translateY(70px);
@@ -132,14 +117,6 @@ export const ProfileStyleContainer = styled.div`
     to {
       transform: rotate(360deg) scale(1);
       opacity: 1;
-    }
-  }
-  @keyframes rotateAnimation2 {
-    from {
-      transform: translateY(-40px);
-    }
-    to {
-      transform: translateY(20px);
     }
   }
 `;
