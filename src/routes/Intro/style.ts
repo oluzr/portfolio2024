@@ -9,7 +9,7 @@ export const IntroStyleContainer = styled.section`
     margin-bottom: 50px;
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     z-index: 4;
     ul {
       background-color: #fff;
@@ -37,7 +37,7 @@ export const IntroStyleContainer = styled.section`
             width: 2px;
             height: 2px;
           }
-          a {
+          p {
             font-weight: 600;
           }
         }
@@ -55,7 +55,7 @@ export const IntroStyleContainer = styled.section`
           border: 1px solid #000;
           transition: all 0.1s;
         }
-        a {
+        p {
           color: #000;
           font-size: 12px;
           font-weight: 400;

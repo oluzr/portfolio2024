@@ -20,11 +20,6 @@ const Intro = () => {
   const { ref: ref3, inView: inView3 } = useInView({
     threshold: 0.1,
   });
-  // Scroll sections references
-  const keywordsRef = useRef(null);
-  const timelineRef = useRef(null);
-  const contactRef = useRef(null);
-  // Scroll sections references
   const sectionRefs: Record<
     Menu,
     React.MutableRefObject<HTMLDivElement | null>
@@ -59,7 +54,7 @@ const Intro = () => {
               className={activeMenu == menu ? "active" : ""}
               onClick={() => handleScroll(menu)}
             >
-              <Link to={`#${menu}`}>{menu}</Link>
+              <p>{menu}</p>
             </li>
           ))}
         </ul>

@@ -170,4 +170,5 @@ export const TimelineStyleContainer = styled.div`
       }
     }
   }
+  
 `;

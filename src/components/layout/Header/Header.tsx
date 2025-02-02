@@ -29,7 +29,7 @@ const Header = () => {
             style={{ top: "calc(10% + 150px)", right: "6%", position: "fixed" }}
           />
           <AppIcons
-            title="In LSP"
+            title="In company"
             icons={constants.APPICONS_1}
             notiNum={4}
             style={{
@@ -42,7 +42,6 @@ const Header = () => {
           <AppIcons
             title="oluzr"
             icons={constants.APPICONS_2}
-            
             style={{
               bottom: "30%",
               right: "5%",

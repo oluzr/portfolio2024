@@ -1,7 +1,7 @@
 import { media } from "assets/media";
 import styled from "styled-components";
 export const ProfileStyleContainer = styled.div`
-  margin-bottom: 10vh;
+  margin-bottom: 8vh;
   .inner {
     background: url("/assets/images/bg-1.jpg") no-repeat center center;
     background-size: cover;
@@ -40,7 +40,7 @@ export const ProfileStyleContainer = styled.div`
       /* transform: translateY(80px); */
       z-index: 1;
       ${media.phone`
-        transform: translateY(60px);
+        transform: translateY(50px);
         `}
       ${media.tablet`
         transform: translateY(70px);
@@ -130,16 +130,16 @@ export const ProfileStyleContainer = styled.div`
       opacity: 1;
     }
     to {
-      transform: rotate(300deg) scale(1);
+      transform: rotate(360deg) scale(1);
       opacity: 1;
     }
   }
   @keyframes rotateAnimation2 {
     from {
-      backdrop-filter: blur(0);
+      transform: translateY(-40px);
     }
     to {
-      backdrop-filter: blur(40px);
+      transform: translateY(20px);
     }
   }
 `;
