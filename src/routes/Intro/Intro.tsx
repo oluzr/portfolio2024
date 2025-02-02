@@ -49,8 +49,9 @@ const Intro = () => {
       <Profile />
       <div className="navigate-section">
         <ul>
-          {menuList.map((menu) => (
+          {menuList.map((menu, idx) => (
             <li
+              key={idx}
               className={activeMenu == menu ? "active" : ""}
               onClick={() => handleScroll(menu)}
             >
