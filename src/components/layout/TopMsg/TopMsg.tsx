@@ -1,8 +1,8 @@
-import * as S from './style'
+import * as S from "./style";
 const TopMsg = () => {
   return (
     <S.TopMsgStyleContainer>
-      <p>time to feed your fish</p>
+      <p>Database for Editability</p>
     </S.TopMsgStyleContainer>
   );
 };
