@@ -11,7 +11,6 @@ node_modules
 dist
 dist-ssr
 *.local
-src/api/data.ts
 
 # Editor directories and files
 .vscode/*
@@ -23,3 +22,5 @@ src/api/data.ts
 *.njsproj
 *.sln
 *.sw?
+
+# src/api/data.ts
